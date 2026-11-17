@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Bồn Cầu Thông Minh AquaLux Royal S1",
+    "category": "Bồn cầu thông minh",
+    "price": 38500000,
+    "image": "https://images.unsplash.com/photo-1585058178216-5643a5ba8eb8?auto=format&fit=crop&w=800&q=80",
+    "description": "Tích hợp công nghệ cảm ứng mở nắp tự động, vòi rửa đa chế độ diệt khuẩn UV, sưởi ấm bệ ngồi và men sứ CeFiONtect chống bám bẩn tuyệt đối."
+  },
+  {
+    "id": 2,
+    "name": "Bồn Cầu Điện Tử AquaLux Neo Diamond",
+    "category": "Bồn cầu thông minh",
+    "price": 45000000,
+    "image": "https://images.unsplash.com/photo-1564540574859-0dfb63985953?auto=format&fit=crop&w=800&q=80",
+    "description": "Thiết kế nguyên khối kim cương sang trọng, điều khiển từ xa cảm ứng không dây, hệ thống xả xoáy kép Tornado siêu êm và tiết kiệm nước."
+  },
+  {
+    "id": 3,
+    "name": "Bồn Cầu Treo Tường Thông Minh AquaLux Pure",
+    "category": "Bồn cầu thông minh",
+    "price": 29800000,
+    "image": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
+    "description": "Thiết kế giấu két nước tinh gọn cho không gian hiện đại, nút xả cảm ứng LED viền vàng, chịu tải trọng lên tới 400kg."
+  },
+  {
+    "id": 4,
+    "name": "Bồn Cầu Thông Minh AquaLux Black Velvet Edition",
+    "category": "Bồn cầu thông minh",
+    "price": 52000000,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "description": "Phiên bản giới hạn phủ men đen mờ nhám siêu sang, đèn LED ban đêm dịu mắt, sấy khô ion âm khử mùi sinh học Plasma."
+  },
+  {
+    "id": 5,
+    "name": "Bồn Cầu Điện Tử AquaLux Elegance Pro",
+    "category": "Bồn cầu thông minh",
+    "price": 34900000,
+    "image": "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80",
+    "description": "Cảm biến đá chân mở nắp và tự xả, chế độ rửa massage nước ấm bọt khí tạo cảm giác êm ái, bệ ngồi kháng khuẩn Ag+."
+  },
+  {
+    "id": 6,
+    "name": "Lavabo Đá Cẩm Thạch Tự Nhiên AquaLux Nero",
+    "category": "Lavabo nghệ thuật",
+    "price": 18500000,
+    "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80",
+    "description": "Chế tác thủ công từ đá cẩm thạch nguyên khối Nero Marquina, vân đá độc bản với viền bo mềm mại tôn lên đẳng cấp không gian."
+  },
+  {
+    "id": 7,
+    "name": "Chậu Rửa Nghệ Thuật AquaLux Golden Leaf",
+    "category": "Lavabo nghệ thuật",
+    "price": 15200000,
+    "image": "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=800&q=80",
+    "description": "Mặt ngoài mạ titan vàng kim PVD chống xước, bề mặt trong phủ men nano pha lê siêu mịn sáng bóng bền bỉ vĩnh cửu."
+  },
+  {
+    "id": 8,
+    "name": "Lavabo Đặt Bàn Gốm Thủ Công AquaLux Terrazzo",
+    "category": "Lavabo nghệ thuật",
+    "price": 9800000,
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "description": "Phong cách Indochine hòa quyện Châu Âu đương đại, hoa văn hạt đá tự nhiên tinh xảo, bề mặt chống ố vàng tuyệt đối."
+  },
+  {
+    "id": 9,
+    "name": "Lavabo Treo Nghệ Thuật AquaLux Floating Slate",
+    "category": "Lavabo nghệ thuật",
+    "price": 12600000,
+    "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
+    "description": "Tích hợp mặt bàn nguyên tấm đá nhân tạo gốc thạch anh, chống thấm nước 100%, đi kèm thanh treo khăn mạ crôm bóng bẩy."
+  },
+  {
+    "id": 10,
+    "name": "Chậu Rửa Lavabo Trụ Đứng AquaLux Monolith",
+    "category": "Lavabo nghệ thuật",
+    "price": 26000000,
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+    "description": "Lavabo trụ đứng nguyên khối phong cách điêu khắc tối giản, phù hợp các biệt thự xa hoa và penthouse đỉnh cao."
+  },
+  {
+    "id": 11,
+    "name": "Hệ Thống Sen Tắm Cây Nhiệt Độ AquaLux Gold Rain",
+    "category": "Vòi sen cao cấp",
+    "price": 22500000,
+    "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80",
+    "description": "Công nghệ khóa nhiệt an toàn 38°C Vernet Pháp, bát sen trần 400mm phun mưa trộn khí Oxy, mạ PVD vàng Champagne đẳng cấp."
+  },
+  {
+    "id": 12,
+    "name": "Sen Âm Tường Thông Minh AquaLux Digital Pro",
+    "category": "Vòi sen cao cấp",
+    "price": 31000000,
+    "image": "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=800&q=80",
+    "description": "Màn hình LED hiển thị nhiệt độ và thời gian tắm chạy bằng áp lực nước thủy điện không dùng pin, 4 phím bấm piano chuyển chế độ mượt mà."
+  },
+  {
+    "id": 13,
+    "name": "Sen Cây Đứng Điều Nhiệt AquaLux Matte Black",
+    "category": "Vòi sen cao cấp",
+    "price": 16800000,
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "description": "Chất liệu đồng thau tiêu chuẩn Châu Âu khử chì, sơn tĩnh điện đen mờ phong cách Bắc Âu Scandinavian, vòi xịt áp lực cao tiện lợi."
+  },
+  {
+    "id": 14,
+    "name": "Hệ Thống Sen Tắm Massage Thủy Lực AquaLux HydroSpa",
+    "category": "Vòi sen cao cấp",
+    "price": 27500000,
+    "image": "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+    "description": "Tích hợp 6 mắt phun massage toàn thân áp lực mạnh, bát sen đa chế độ phun thác nước và phun sương thư giãn đỉnh cao."
+  },
+  {
+    "id": 15,
+    "name": "Vòi Sen Âm Trần Đa Sắc AquaLux Chroma Therapy",
+    "category": "Vòi sen cao cấp",
+    "price": 36000000,
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+    "description": "Bát sen âm trần kích thước lớn 500x500mm tích hợp ánh sáng LED trị liệu tinh thần theo nhịp điệu nước, kết nối Bluetooth phát nhạc."
+  },
+  {
+    "id": 16,
+    "name": "Bồn Tắm Massage Thủy Lực AquaLux Grand Oasis",
+    "category": "Bồn tắm massage",
+    "price": 68000000,
+    "image": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80",
+    "description": "Acrylic Lucite cao cấp đúc nguyên khối cách nhiệt hoàn hảo, hệ thống 12 mắt sục khí ozone thải độc và đèn LED viền nước thư giãn."
+  },
+  {
+    "id": 17,
+    "name": "Bồn Tắm Độc Lập Tròn AquaLux Muse",
+    "category": "Bồn tắm massage",
+    "price": 42000000,
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "description": "Đường nét bo tròn mềm mại chuẩn thiết kế Ý, dung tích lớn cho trải nghiệm ngâm bồn thoải mái nhất, chống ố và trầy xước vượt trội."
+  },
+  {
+    "id": 18,
+    "name": "Bồn Tắm Nằm Massage Cao Cấp AquaLux Platinum Duo",
+    "category": "Bồn tắm massage",
+    "price": 79000000,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "description": "Kích thước 1.8m dành cho 2 người, gối tựa đầu da êm ái, bộ gia nhiệt giữ ấm nước liên tục và hệ thống tạo bọt khí nano dưỡng da."
+  },
+  {
+    "id": 19,
+    "name": "Bồn Tắm Đá Nhân Tạo Nguyên Khối AquaLux Calacatta",
+    "category": "Bồn tắm massage",
+    "price": 89000000,
+    "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+    "description": "Đúc từ bột đá tự nhiên kết hợp sợi thủy tinh hữu cơ cao cấp, bề mặt satin mượt mà như lụa, giữ ấm nước gấp 3 lần bồn thông thường."
+  },
+  {
+    "id": 20,
+    "name": "Bồn Tắm Góc Massage Tiết Kiệm Không Gian AquaLux Corner",
+    "category": "Bồn tắm massage",
+    "price": 38000000,
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "description": "Thiết kế tối ưu góc phòng tắm master, mặt kính cường lực trong suốt quan sát dòng chảy massage, hệ thống chống rò điện an toàn tuyệt đối."
+  }
+]

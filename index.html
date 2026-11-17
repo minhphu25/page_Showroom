@@ -1,783 +1,1185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Dynamic SEO meta tags populated by main.js, with luxury defaults -->
-  <title>AquaLux - Showroom Thiết Bị Vệ Sinh Cao Cấp & Sang Trọng</title>
-  <meta name="description" content="AquaLux chuyên phân phối thiết bị vệ sinh nhập khẩu Châu Âu chính hãng: bồn cầu thông minh, lavabo đá tự nhiên, sen tắm nhiệt độ, bồn tắm massage cao cấp.">
-  <meta name="keywords" content="thiết bị vệ sinh cao cấp, bồn cầu thông minh, lavabo nghệ thuật, vòi sen âm tường, bồn tắm massage, showroom aqualux">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="AquaLux - Đỉnh Cao Thiết Bị Vệ Sinh & Phòng Tắm Sang Trọng">
-  <meta property="og:description" content="Khám phá bộ sưu tập thiết bị phòng tắm chuẩn thượng lưu tại AquaLux. Cam kết hàng chính hãng 100%, bảo hành 10 năm tại nhà.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80">
-  <meta property="og:type" content="website">
+    <!-- Dynamic SEO meta tags populated by main.js, with luxury defaults -->
+    <title>Nhung Nhàn - Showroom Thiết Bị Vệ Sinh Cao Cấp & Sang Trọng</title>
+    <meta
+      name="description"
+      content="Nhung Nhàn chuyên phân phối thiết bị vệ sinh nhập khẩu Châu Âu chính hãng: bồn cầu thông minh, lavabo đá tự nhiên, sen tắm nhiệt độ, bồn tắm massage cao cấp."
+    />
+    <meta
+      name="keywords"
+      content="thiết bị vệ sinh cao cấp, bồn cầu thông minh, lavabo nghệ thuật, vòi sen âm tường, bồn tắm massage, showroom nhung nhàn"
+    />
 
-  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Nhung Nhàn - Nhà Phân Phối Gạch - Thiết bị Vệ Sinh "
+    />
+    <meta
+      property="og:description"
+      content="Khám phá bộ sưu tập thiết bị phòng tắm chuẩn thượng lưu tại Nhung Nhàn. Cam kết hàng chính hãng 100%, bảo hành 10 năm tại nhà."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta property="og:type" content="website" />
 
-  <!-- Font Awesome 6 Icons via CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            serif: ['"Playfair Display"', 'Georgia', 'serif'],
-            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+    <!-- Font Awesome 6 Icons via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', "Georgia", "serif"],
+              sans: [
+                '"Plus Jakarta Sans"',
+                "system-ui",
+                "-apple-system",
+                "sans-serif",
+              ],
+            },
+            colors: {
+              amber: {
+                50: "#fffbeb",
+                100: "#fef3c7",
+                200: "#fde68a",
+                300: "#fcd34d",
+                400: "#fbbf24",
+                500: "#f59e0b",
+                600: "#d97706",
+                700: "#b45309",
+                800: "#92400e",
+                900: "#78350f",
+              },
+            },
           },
-          colors: {
-            amber: {
-              50: '#fffbeb',
-              100: '#fef3c7',
-              200: '#fde68a',
-              300: '#fcd34d',
-              400: '#fbbf24',
-              500: '#f59e0b',
-              600: '#d97706',
-              700: '#b45309',
-              800: '#92400e',
-              900: '#78350f',
-            }
-          }
-        }
-      }
-    }
-  </script>
+        },
+      };
+    </script>
 
-  <!-- Custom CSS File -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-600 selection:text-white" data-page="home">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-600 selection:text-white"
+    data-page="home"
+  >
+    <!-- ================= HEADER SECTION (Fixed top) ================= -->
+    <header
+      id="main-header"
+      class="header-transparent fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <!-- Logo AquaLux -->
+          <a href="index.html" class="flex items-center gap-3 group">
+            <img
+              src="nhungnhan.svg"
+              alt="NhungNhàn Logo"
+              class="logo-img group-hover:scale-105 transition-transform"
+            />
+            <div>
+              <span
+                class="logo-title font-serif text-2xl font-black tracking-tight text-white transition-colors duration-300"
+              >
+                Nhung<span class="text-amber-500">Nhàn</span>
+              </span>
+              <span
+                class="block text-[9px] tracking-[0.25em] text-amber-400 font-semibold uppercase -mt-1"
+              >
+                Nhà Phân Phối Gạch - Thiết bị Vệ Sinh Cao Cấp
+              </span>
+            </div>
+          </a>
 
-  <!-- ================= HEADER SECTION (Fixed top) ================= -->
-  <header id="main-header" class="header-transparent fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between">
-        
-        <!-- Logo AquaLux -->
-        <a href="index.html" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-white shadow-lg shadow-amber-600/30 group-hover:scale-105 transition-transform">
-            <i class="fa-solid fa-gem text-lg"></i>
+          <!-- Desktop Navigation Menu -->
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="nav-link active font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200"
+            >
+              Trang Chủ
+            </a>
+            <a
+              href="products.html"
+              class="nav-link font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200"
+            >
+              Sản Phẩm
+            </a>
+            <a
+              href="#categories"
+              class="nav-link font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200"
+            >
+              Danh Mục
+            </a>
+            <a
+              href="#features"
+              class="nav-link font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200"
+            >
+              Dịch Vụ & Đặc Quyền
+            </a>
+            <a
+              href="#contact"
+              class="nav-link font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200"
+            >
+              Liên Hệ
+            </a>
+          </nav>
+
+          <!-- Right CTA / Hotline -->
+          <div class="hidden lg:flex items-center gap-4">
+            <a
+              href="tel:19008888"
+              class="hotline-btn flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-white/30 text-white hover:bg-white/10 text-sm font-semibold transition-all duration-300 shadow-sm"
+            >
+              <div
+                class="w-7 h-7 rounded-full bg-amber-600 flex items-center justify-center text-white text-xs"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <span>Hotline: 0921 852 999</span>
+            </a>
           </div>
-          <div>
-            <span class="logo-title font-serif text-2xl font-black tracking-tight text-white transition-colors duration-300">
-              Aqua<span class="text-amber-500">Lux</span>
-            </span>
-            <span class="block text-[9px] tracking-[0.25em] text-amber-400 font-semibold uppercase -mt-1">
-              Sanitary Ware
-            </span>
-          </div>
-        </a>
 
-        <!-- Desktop Navigation Menu -->
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="index.html" class="nav-link active font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200">
-            Trang Chủ
+          <!-- Mobile Hamburger Button -->
+          <div class="flex items-center md:hidden">
+            <button
+              id="mobile-menu-btn"
+              type="button"
+              class="text-white hover:text-amber-400 p-2 text-xl focus:outline-none transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Dropdown Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-slate-900/98 backdrop-blur-xl border-t border-slate-800 shadow-2xl px-6 py-6 transition-all duration-300"
+      >
+        <nav class="flex flex-col space-y-4">
+          <a
+            href="index.html"
+            class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between"
+          >
+            <span>Trang Chủ</span>
+            <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
           </a>
-          <a href="products.html" class="nav-link font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200">
-            Sản Phẩm
+          <a
+            href="products.html"
+            class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between"
+          >
+            <span>Sản Phẩm</span>
+            <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
           </a>
-          <a href="#categories" class="nav-link font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200">
-            Danh Mục
+          <a
+            href="#categories"
+            class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between"
+          >
+            <span>Danh Mục</span>
+            <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
           </a>
-          <a href="#features" class="nav-link font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200">
-            Dịch Vụ & Đặc Quyền
+          <a
+            href="#features"
+            class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between"
+          >
+            <span>Dịch Vụ & Đặc Quyền</span>
+            <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
           </a>
-          <a href="#contact" class="nav-link font-medium text-sm text-white hover:text-amber-300 transition-colors duration-200">
-            Liên Hệ
+          <a
+            href="#contact"
+            class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between"
+          >
+            <span>Liên Hệ</span>
+            <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
           </a>
         </nav>
-
-        <!-- Right CTA / Hotline -->
-        <div class="hidden lg:flex items-center gap-4">
-          <a href="tel:19008888" class="hotline-btn flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-white/30 text-white hover:bg-white/10 text-sm font-semibold transition-all duration-300 shadow-sm">
-            <div class="w-7 h-7 rounded-full bg-amber-600 flex items-center justify-center text-white text-xs">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <span>Hotline: 1900 8888</span>
+        <div class="mt-6 pt-4 border-t border-slate-800">
+          <a
+            href="tel:19008888"
+            class="flex items-center justify-center gap-3 w-full py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold shadow-lg shadow-amber-600/30 transition-all"
+          >
+            <i class="fa-solid fa-phone"></i>
+            <span>Hotline: 0921 852 999</span>
           </a>
         </div>
-
-        <!-- Mobile Hamburger Button -->
-        <div class="flex items-center md:hidden">
-          <button id="mobile-menu-btn" type="button" class="text-white hover:text-amber-400 p-2 text-xl focus:outline-none transition-colors" aria-label="Toggle mobile menu">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-
       </div>
-    </div>
+    </header>
 
-    <!-- Mobile Navigation Dropdown Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-slate-900/98 backdrop-blur-xl border-t border-slate-800 shadow-2xl px-6 py-6 transition-all duration-300">
-      <nav class="flex flex-col space-y-4">
-        <a href="index.html" class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between">
-          <span>Trang Chủ</span>
-          <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
-        </a>
-        <a href="products.html" class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between">
-          <span>Sản Phẩm</span>
-          <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
-        </a>
-        <a href="#categories" class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between">
-          <span>Danh Mục</span>
-          <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
-        </a>
-        <a href="#features" class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between">
-          <span>Dịch Vụ & Đặc Quyền</span>
-          <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
-        </a>
-        <a href="#contact" class="text-white hover:text-amber-400 font-semibold py-2 border-b border-slate-800 flex items-center justify-between">
-          <span>Liên Hệ</span>
-          <i class="fa-solid fa-chevron-right text-xs text-amber-500"></i>
-        </a>
-      </nav>
-      <div class="mt-6 pt-4 border-t border-slate-800">
-        <a href="tel:19008888" class="flex items-center justify-center gap-3 w-full py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold shadow-lg shadow-amber-600/30 transition-all">
-          <i class="fa-solid fa-phone"></i>
-          <span>Hotline: 1900 8888</span>
-        </a>
-      </div>
-    </div>
-  </header>
-
-
-  <!-- ================= HERO SECTION (min-h: 90vh) ================= -->
-  <section class="relative min-h-[90vh] flex items-center bg-slate-950 overflow-hidden">
-    <!-- Hero Background Image with Overlay Gradient -->
-    <div class="absolute inset-0 z-0">
-      <img 
-        src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80" 
-        alt="Không Gian Phòng Tắm Sang Trọng AquaLux" 
-        class="w-full h-full object-cover object-center filter brightness-90"
-      />
-      <!-- Gradient Overlay from Slate-900 to Transparent -->
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/80 to-transparent"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
-    </div>
-
-    <!-- Hero Content -->
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36">
-      <div class="max-w-2xl">
-        
-        <!-- Badge: Thương hiệu cao cấp số 1 -->
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-800/80 backdrop-blur-md border border-amber-500/40 text-amber-400 text-xs font-bold tracking-wider uppercase mb-6 shadow-xl">
-          <i class="fa-solid fa-crown text-amber-400"></i>
-          <span>Thương hiệu cao cấp số 1</span>
-        </div>
-
-        <!-- Tiêu đề: Không Gian Sống Hoàn Mỹ -->
-        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.15] mb-6 tracking-tight">
-          Không Gian Sống <br>
-          <span class="text-gold-gradient italic">Hoàn Mỹ</span> & Đẳng Cấp
-        </h1>
-
-        <!-- Subtitle -->
-        <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-10 max-w-xl">
-          AquaLux tiên phong kiến tạo chuẩn mực phòng tắm thượng lưu với các kiệt tác thiết bị vệ sinh nhập khẩu Châu Âu, kết tinh giữa công nghệ thông minh và nghệ thuật chế tác thủ công tinh xảo.
-        </p>
-
-        <!-- 2 CTA Buttons -->
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-          <a href="products.html" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white font-bold text-sm tracking-wide shadow-xl shadow-amber-600/30 hover:shadow-amber-500/40 transform hover:-translate-y-0.5 transition-all duration-300">
-            <span>Khám Phá Bộ Sưu Tập</span>
-            <i class="fa-solid fa-arrow-right text-xs"></i>
-          </a>
-
-          <a href="#contact" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-semibold text-sm tracking-wide hover:border-amber-400 transition-all duration-300">
-            <i class="fa-solid fa-calendar-check text-amber-400"></i>
-            <span>Nhận Tư Vấn Miễn Phí</span>
-          </a>
-        </div>
-
-        <!-- Metric highlights -->
-        <div class="grid grid-cols-3 gap-6 mt-14 pt-8 border-t border-slate-800/80">
-          <div>
-            <div class="text-2xl lg:text-3xl font-extrabold text-amber-400 font-serif">100%</div>
-            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Nhập khẩu chính hãng</div>
-          </div>
-          <div>
-            <div class="text-2xl lg:text-3xl font-extrabold text-white font-serif">10 Năm</div>
-            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Bảo hành tại nhà</div>
-          </div>
-          <div>
-            <div class="text-2xl lg:text-3xl font-extrabold text-amber-400 font-serif">5000+</div>
-            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Dự án biệt thự</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================= CATEGORIES SECTION (4 columns) ================= -->
-  <section id="categories" class="py-24 bg-white relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Section Title -->
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs font-extrabold uppercase tracking-[0.2em] text-amber-600 bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200">
-          Danh Mục Sản Phẩm
-        </span>
-        <h2 class="font-serif text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">
-          Bộ Sưu Tập Tuyệt Tác
-        </h2>
-        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-          Từng dòng sản phẩm tại AquaLux là biểu tượng của phong cách sống quý tộc, nâng niu từng giác quan trong mỗi khoảnh khắc thư giãn riêng tư.
-        </p>
+    <!-- ================= HERO SECTION (min-h: 90vh) ================= -->
+    <section
+      class="relative min-h-[90vh] flex items-center bg-slate-950 overflow-hidden"
+    >
+      <!-- Hero Background Image with Overlay Gradient -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80"
+          alt="Không Gian Phòng Tắm Sang Trọng "
+          class="w-full h-full object-cover object-center filter brightness-90"
+        />
+        <!-- Gradient Overlay from Slate-900 to Transparent -->
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/80 to-transparent"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"
+        ></div>
       </div>
 
-      <!-- Categories Grid (4 columns) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Category 1: Bồn Cầu Thông Minh -->
-        <a href="products.html?category=B%E1%BB%93n%20c%E1%BA%A7u%20th%C3%B4ng%20minh" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-lg block">
-          <!-- Background image with scale on hover -->
-          <img 
-            src="https://images.unsplash.com/photo-1585058178216-5643a5ba8eb8?auto=format&fit=crop&w=800&q=80" 
-            alt="Bồn cầu thông minh" 
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-          />
-          <!-- Darkening overlay on hover -->
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:bg-slate-950/70 transition-all duration-500"></div>
-          
-          <!-- Content sliding up on hover -->
-          <div class="absolute inset-0 p-6 flex flex-col justify-end text-white z-10">
-            <span class="text-xs text-amber-400 font-bold uppercase tracking-widest mb-1">Thiết bị điện tử</span>
-            <h3 class="font-serif text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors">
-              Bồn Cầu Thông Minh
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-              Cảm ứng tự động mở nắp, sưởi ấm, vòi rửa đa năng kháng khuẩn UV diệt khuẩn 99.9%.
-            </p>
-            <div class="flex items-center gap-2 text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-300">
-              <span>Xem 5 mẫu sản phẩm</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </div>
-          </div>
-        </a>
-
-        <!-- Category 2: Lavabo Nghệ Thuật -->
-        <a href="products.html?category=Lavabo%20ngh%E1%BB%87%20thu%E1%BA%ADt" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-lg block">
-          <img 
-            src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" 
-            alt="Lavabo nghệ thuật" 
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:bg-slate-950/70 transition-all duration-500"></div>
-          
-          <div class="absolute inset-0 p-6 flex flex-col justify-end text-white z-10">
-            <span class="text-xs text-amber-400 font-bold uppercase tracking-widest mb-1">Chế tác thủ công</span>
-            <h3 class="font-serif text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors">
-              Lavabo Nghệ Thuật
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-              Đá cẩm thạch nguyên khối Nero Marquina, men sứ mạ vàng PVD đỉnh cao điêu khắc Ý.
-            </p>
-            <div class="flex items-center gap-2 text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-300">
-              <span>Xem 5 mẫu sản phẩm</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </div>
-          </div>
-        </a>
-
-        <!-- Category 3: Vòi Sen Cao Cấp -->
-        <a href="products.html?category=V%C3%B2i%20sen%20cao%20c%E1%BA%A5p" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-lg block">
-          <img 
-            src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80" 
-            alt="Vòi sen cao cấp" 
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:bg-slate-950/70 transition-all duration-500"></div>
-          
-          <div class="absolute inset-0 p-6 flex flex-col justify-end text-white z-10">
-            <span class="text-xs text-amber-400 font-bold uppercase tracking-widest mb-1">Công nghệ khóa nhiệt</span>
-            <h3 class="font-serif text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors">
-              Vòi Sen Cao Cấp
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-              Bát sen âm trần đa sắc, công nghệ khóa nhiệt an toàn 38°C và chế độ massage sương mù.
-            </p>
-            <div class="flex items-center gap-2 text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-300">
-              <span>Xem 5 mẫu sản phẩm</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </div>
-          </div>
-        </a>
-
-        <!-- Category 4: Bồn Tắm Massage -->
-        <a href="products.html?category=B%E1%BB%93n%20t%E1%BA%AFm%20massage" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-lg block">
-          <img 
-            src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" 
-            alt="Bồn tắm massage" 
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:bg-slate-950/70 transition-all duration-500"></div>
-          
-          <div class="absolute inset-0 p-6 flex flex-col justify-end text-white z-10">
-            <span class="text-xs text-amber-400 font-bold uppercase tracking-widest mb-1">Nghỉ dưỡng thượng lưu</span>
-            <h3 class="font-serif text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors">
-              Bồn Tắm Massage
-            </h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-              Sục khí ozone Jacuzzi thải độc, đúc nguyên khối Acrylic Lucite giữ nhiệt hoàn hảo.
-            </p>
-            <div class="flex items-center gap-2 text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-300">
-              <span>Xem 5 mẫu sản phẩm</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </div>
-          </div>
-        </a>
-
-      </div>
-
-      <!-- Direct link to all products -->
-      <div class="mt-12 text-center">
-        <a href="products.html" class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-amber-600 pb-1 border-b-2 border-slate-900 hover:border-amber-600 transition-all">
-          <span>Xem tất cả 20 sản phẩm cao cấp</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ================= FEATURES SECTION (Dịch vụ) ================= -->
-  <!-- Khối nền tối (slate-900) bo góc lớn, chia 3 cột. Icon đổi sang trắng khi hover -->
-  <section id="features" class="py-12 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden border border-slate-800">
-        
-        <!-- Decorative Glow -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-amber-700/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <!-- Section Header -->
-        <div class="max-w-2xl mb-12 sm:mb-16 relative z-10">
-          <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-500/20">
-            Đặc Quyền AquaLux
-          </span>
-          <h2 class="font-serif text-3xl sm:text-4xl font-black mt-4 text-white">
-            Chuẩn Mực Dịch Vụ 6 Sao Dành Riêng Cho Quý Khách
-          </h2>
-        </div>
-
-        <!-- 3 Columns Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 relative z-10">
-          
-          <!-- Column 1: Hàng chính hãng -->
-          <div class="group p-8 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 hover:border-amber-500/40 transition-all duration-300">
-            <div class="w-16 h-16 rounded-2xl bg-slate-900 border border-amber-500/30 flex items-center justify-center mb-6 group-hover:bg-amber-600 transition-all duration-300 shadow-lg">
-              <i class="fa-solid fa-certificate text-2xl text-amber-400 group-hover:text-white transition-colors duration-300"></i>
-            </div>
-            <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">
-              Hàng Chính Hãng 100%
-            </h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Nhập khẩu nguyên chiếc từ các thương hiệu phòng tắm lừng danh Đức, Ý và Thụy Sĩ. Đầy đủ chứng chỉ xuất xứ CO và kiểm định chất lượng CQ quốc tế.
-            </p>
+      <!-- Hero Content -->
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36"
+      >
+        <div class="max-w-2xl">
+          <!-- Badge: Thương hiệu cao cấp số 1 -->
+          <div
+            class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-800/80 backdrop-blur-md border border-amber-500/40 text-amber-400 text-xs font-bold tracking-wider uppercase mb-6 shadow-xl"
+          >
+            <i class="fa-solid fa-crown text-amber-400"></i>
+            <span>Thương hiệu cao cấp số 1</span>
           </div>
 
-          <!-- Column 2: Bảo hành đặc quyền -->
-          <div class="group p-8 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 hover:border-amber-500/40 transition-all duration-300">
-            <div class="w-16 h-16 rounded-2xl bg-slate-900 border border-amber-500/30 flex items-center justify-center mb-6 group-hover:bg-amber-600 transition-all duration-300 shadow-lg">
-              <i class="fa-solid fa-shield-halved text-2xl text-amber-400 group-hover:text-white transition-colors duration-300"></i>
-            </div>
-            <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">
-              Bảo Hành Đặc Quyền 10 Năm
-            </h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Chính sách bảo hành tận nhà chu đáo lên tới 10 năm cho thân sứ và men phủ. Cam kết 1 đổi 1 trong vòng 30 ngày đầu tiên nếu phát sinh bất kỳ lỗi kỹ thuật nào.
-            </p>
+          <!-- Tiêu đề: Không Gian Sống Hoàn Mỹ -->
+          <h1
+            class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.15] mb-6 tracking-tight"
+          >
+            Không Gian Sống <br />
+            <span class="text-gold-gradient italic">Hoàn Mỹ</span> & Đẳng Cấp
+          </h1>
+
+          <!-- Subtitle -->
+          <p
+            class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-10 max-w-xl"
+          >
+            Nhung Nhàn tiên phong kiến tạo chuẩn mực phòng tắm thượng lưu với
+            các kiệt tác thiết bị vệ sinh nhập khẩu Châu Âu, kết tinh giữa công
+            nghệ thông minh và nghệ thuật chế tác thủ công tinh xảo.
+          </p>
+
+          <!-- 2 CTA Buttons -->
+          <div
+            class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
+          >
+            <a
+              href="products.html"
+              class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white font-bold text-sm tracking-wide shadow-xl shadow-amber-600/30 hover:shadow-amber-500/40 transform hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <span>Khám Phá Bộ Sưu Tập</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-semibold text-sm tracking-wide hover:border-amber-400 transition-all duration-300"
+            >
+              <i class="fa-solid fa-calendar-check text-amber-400"></i>
+              <span>Nhận Tư Vấn Miễn Phí</span>
+            </a>
           </div>
 
-          <!-- Column 3: Vận chuyển & Lắp đặt -->
-          <div class="group p-8 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 hover:border-amber-500/40 transition-all duration-300">
-            <div class="w-16 h-16 rounded-2xl bg-slate-900 border border-amber-500/30 flex items-center justify-center mb-6 group-hover:bg-amber-600 transition-all duration-300 shadow-lg">
-              <i class="fa-solid fa-truck-fast text-2xl text-amber-400 group-hover:text-white transition-colors duration-300"></i>
-            </div>
-            <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">
-              Vận Chuyển & Lắp Đặt Tận Tâm
-            </h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Miễn phí vận chuyển và lắp đặt hoàn thiện bởi đội ngũ kỹ thuật viên tay nghề cao được đào tạo bài bản từ chính hãng. Kiểm tra áp lực nước tỉ mỉ trước khi bàn giao.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ================= CONTACT SECTION (Liên hệ Card 2 phần) ================= -->
-  <!-- Dạng Card chia 2 phần: Cột trái (40%) nền tối, Cột phải (60%) nền trắng -->
-  <section id="contact" class="py-24 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Card Container -->
-      <div class="rounded-3xl shadow-2xl overflow-hidden border border-slate-200/80 flex flex-col lg:flex-row bg-white">
-        
-        <!-- Cột trái (40%): Nền tối chứa thông tin showroom -->
-        <div class="lg:w-[40%] bg-slate-900 text-white p-8 sm:p-12 lg:p-14 flex flex-col justify-between relative overflow-hidden">
-          
-          <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-amber-600/10 rounded-full blur-2xl"></div>
-
-          <div class="relative z-10">
-            <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-500/20">
-              Trực Tiếp Tại Showroom
-            </span>
-            <h2 class="font-serif text-3xl font-black mt-4 mb-4 text-white">
-              Ghé Thăm AquaLux
-            </h2>
-            <p class="text-sm text-slate-300 leading-relaxed mb-8">
-              Trải nghiệm thực tế không gian phòng tắm mẫu siêu sang và nhận tư vấn chuyên sâu cùng kiến trúc sư nội thất của chúng tôi.
-            </p>
-
-            <!-- Contact Details -->
-            <div class="space-y-6">
-              
-              <!-- Address -->
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
-                  <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1">Địa chỉ Showroom</h4>
-                  <p class="text-sm text-slate-200 font-medium">Hà Nội: 168 Hoàng Quốc Việt, Cầu Giấy</p>
-                  <p class="text-sm text-slate-200 font-medium mt-1">TP.HCM: 88 Nguyễn Thị Thập, Tân Phú, Quận 7</p>
-                </div>
+          <!-- Metric highlights -->
+          <div
+            class="grid grid-cols-3 gap-6 mt-14 pt-8 border-t border-slate-800/80"
+          >
+            <div>
+              <div
+                class="text-2xl lg:text-3xl font-extrabold text-amber-400 font-serif"
+              >
+                100%
               </div>
-
-              <!-- Hotline -->
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                  <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1">Hotline Hỗ Trợ 24/7</h4>
-                  <a href="tel:19008888" class="text-base text-white font-bold hover:text-amber-400 transition-colors">1900 8888 / 0988 888 999</a>
-                </div>
+              <div
+                class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium"
+              >
+                Nhập khẩu chính hãng
               </div>
-
-              <!-- Email -->
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div>
-                  <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1">Email Liên Hệ</h4>
-                  <a href="mailto:contact@aqualux.vn" class="text-sm text-slate-200 hover:text-amber-400 transition-colors">contact@aqualux.vn</a>
-                </div>
-              </div>
-
-              <!-- Opening Hours -->
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
-                  <i class="fa-solid fa-clock"></i>
-                </div>
-                <div>
-                  <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1">Giờ Mở Cửa</h4>
-                  <p class="text-sm text-slate-200">08:00 - 21:00 (Từ Thứ Hai đến Chủ Nhật)</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Bottom guarantee quote -->
-          <div class="mt-8 pt-6 border-t border-slate-800 relative z-10 flex items-center gap-3">
-            <i class="fa-solid fa-quote-left text-amber-500 text-xl opacity-60"></i>
-            <span class="text-xs text-slate-400 italic">"Chúng tôi tạo nên không gian nơi sự thư giãn đạt tới đỉnh cao nghệ thuật."</span>
-          </div>
-
-        </div>
-
-        <!-- Cột phải (60%): Nền trắng chứa Form liên hệ -->
-        <div class="lg:w-[60%] p-8 sm:p-12 lg:p-14 bg-white">
-          <div class="max-w-xl">
-            <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-600 bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200">
-              Đăng Ký Tư Vấn
-            </span>
-            <h3 class="font-serif text-2xl sm:text-3xl font-black text-slate-900 mt-4 mb-2">
-              Nhận Báo Giá & Bản Vẽ Phối Cảnh 3D
-            </h3>
-            <p class="text-sm text-slate-500 mb-8">
-              Vui lòng để lại thông tin, đội ngũ chuyên viên kiến trúc AquaLux sẽ chủ động liên hệ trong 15 phút.
-            </p>
-
-            <form id="contact-form" class="space-y-5">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <!-- Họ tên -->
-                <div>
-                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                    Họ và Tên <span class="text-red-500">*</span>
-                  </label>
-                  <input 
-                    type="text" 
-                    name="name" 
-                    required 
-                    placeholder="Ví dụ: Nguyễn Văn An"
-                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all text-sm text-slate-800 bg-slate-50/50"
-                  />
-                </div>
-
-                <!-- Số điện thoại -->
-                <div>
-                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                    Số Điện Thoại <span class="text-red-500">*</span>
-                  </label>
-                  <input 
-                    type="tel" 
-                    name="phone" 
-                    required 
-                    placeholder="Ví dụ: 0912 345 678"
-                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all text-sm text-slate-800 bg-slate-50/50"
-                  />
-                </div>
-              </div>
-
-              <!-- Dịch vụ quan tâm -->
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Dịch Vụ & Sản Phẩm Quan Tâm
-                </label>
-                <select 
-                  name="service"
-                  class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all text-sm text-slate-800 bg-slate-50/50"
-                >
-                  <option value="Tư vấn trọn gói phòng tắm biệt thự">Tư vấn trọn gói phòng tắm biệt thự / Penthouse</option>
-                  <option value="Báo giá bồn cầu thông minh">Báo giá bồn cầu thông minh</option>
-                  <option value="Báo giá bồn tắm massage thủy lực">Báo giá bồn tắm massage Jacuzzi</option>
-                  <option value="Báo giá hệ thống sen tắm nhiệt độ">Báo giá hệ thống sen tắm nhiệt độ</option>
-                  <option value="Thiết kế và thi công theo yêu cầu">Thiết kế và thi công theo yêu cầu</option>
-                </select>
-              </div>
-
-              <!-- Lời nhắn -->
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Lời Nhắn / Yêu Cầu Cụ Thể
-                </label>
-                <textarea 
-                  name="message" 
-                  rows="4" 
-                  placeholder="Quý khách có thể chia sẻ thêm về diện tích phòng tắm, phong cách yêu thích hoặc tiến độ công trình..."
-                  class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all text-sm text-slate-800 bg-slate-50/50 resize-none"
-                ></textarea>
-              </div>
-
-              <!-- Nút Gửi -->
-              <div>
-                <button 
-                  type="submit" 
-                  class="w-full py-4 px-8 rounded-xl bg-slate-900 hover:bg-amber-600 text-white font-bold text-sm tracking-wider uppercase transition-all duration-300 shadow-xl shadow-slate-900/10 hover:shadow-amber-600/30 flex items-center justify-center gap-2 group"
-                >
-                  <span>Gửi Yêu Cầu Tư Vấn Ngay</span>
-                  <i class="fa-solid fa-paper-plane text-xs transform group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform"></i>
-                </button>
-              </div>
-
-              <p class="text-center text-xs text-slate-400">
-                <i class="fa-solid fa-lock text-[10px] mr-1"></i>
-                Cam kết bảo mật 100% thông tin cá nhân của Quý khách theo chuẩn GDPR.
-              </p>
-            </form>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ================= FOOTER SECTION (slate-950 chia 4 cột) ================= -->
-  <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- 4 Columns Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-14 border-b border-slate-800/80">
-        
-        <!-- Cột 1: Giới thiệu -->
-        <div>
-          <a href="index.html" class="flex items-center gap-3 mb-5">
-            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-white shadow-md">
-              <i class="fa-solid fa-gem text-base"></i>
             </div>
             <div>
-              <span class="font-serif text-2xl font-black text-white">Aqua<span class="text-amber-500">Lux</span></span>
-              <span class="block text-[8px] tracking-[0.25em] text-amber-400 font-semibold uppercase -mt-1">Sanitary Ware</span>
+              <div
+                class="text-2xl lg:text-3xl font-extrabold text-white font-serif"
+              >
+                10 Năm
+              </div>
+              <div
+                class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium"
+              >
+                Bảo hành tại nhà
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-2xl lg:text-3xl font-extrabold text-amber-400 font-serif"
+              >
+                5000+
+              </div>
+              <div
+                class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium"
+              >
+                Dự án biệt thự
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIES SECTION (4 columns) ================= -->
+    <section id="categories" class="py-24 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Title -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span
+            class="text-xs font-extrabold uppercase tracking-[0.2em] text-amber-600 bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200"
+          >
+            Danh Mục Sản Phẩm
+          </span>
+          <h2
+            class="font-serif text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4"
+          >
+            Bộ Sưu Tập Tuyệt Tác
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Từng dòng sản phẩm tại Nhung Nhàn là biểu tượng của phong cách sống
+            quý tộc, nâng niu từng giác quan trong mỗi khoảnh khắc thư giãn
+            riêng tư.
+          </p>
+        </div>
+
+        <!-- Categories Grid (4 columns) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Category 1: Bồn Cầu Thông Minh -->
+          <a
+            href="products.html?category=B%E1%BB%93n%20c%E1%BA%A7u%20th%C3%B4ng%20minh"
+            class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-lg block"
+          >
+            <!-- Background image with scale on hover -->
+            <img
+              src="https://images.unsplash.com/photo-1777869979899-66f5cd72b10c?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=800"
+              alt="Bồn cầu thông minh"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            />
+            <!-- Darkening overlay on hover -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:bg-slate-950/70 transition-all duration-500"
+            ></div>
+
+            <!-- Content sliding up on hover -->
+            <div
+              class="absolute inset-0 p-6 flex flex-col justify-end text-white z-10"
+            >
+              <span
+                class="text-xs text-amber-400 font-bold uppercase tracking-widest mb-1"
+                >Thiết bị điện tử</span
+              >
+              <h3
+                class="font-serif text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors"
+              >
+                Bồn Cầu Thông Minh
+              </h3>
+              <p
+                class="text-xs text-slate-300 leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500"
+              >
+                Cảm ứng tự động mở nắp, sưởi ấm, vòi rửa đa năng kháng khuẩn UV
+                diệt khuẩn 99.9%.
+              </p>
+              <div
+                class="flex items-center gap-2 text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <span>Xem 5 mẫu sản phẩm</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </div>
             </div>
           </a>
-          <p class="text-xs text-slate-400 leading-relaxed mb-6">
-            AquaLux - Thương hiệu phân phối thiết bị vệ sinh cao cấp hàng đầu Việt Nam. Nâng tầm nghệ thuật sống với không gian phòng tắm chuẩn nghỉ dưỡng 5 sao.
-          </p>
-          <div class="flex items-center gap-3">
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-amber-600 text-slate-400 hover:text-white flex items-center justify-center transition-colors text-xs">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-amber-600 text-slate-400 hover:text-white flex items-center justify-center transition-colors text-xs">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-amber-600 text-slate-400 hover:text-white flex items-center justify-center transition-colors text-xs">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-amber-600 text-slate-400 hover:text-white flex items-center justify-center transition-colors text-xs">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
 
-        <!-- Cột 2: Liên kết nhanh -->
-        <div>
-          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-5 font-serif border-l-2 border-amber-500 pl-3">
-            Liên Kết Nhanh
-          </h4>
-          <ul class="space-y-2.5 text-xs">
-            <li>
-              <a href="index.html" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-angle-right text-[10px] text-amber-500"></i>
-                <span>Trang Chủ</span>
-              </a>
-            </li>
-            <li>
-              <a href="products.html" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-angle-right text-[10px] text-amber-500"></i>
-                <span>Tất Cả Sản Phẩm</span>
-              </a>
-            </li>
-            <li>
-              <a href="products.html?category=B%E1%BB%93n%20c%E1%BA%A7u%20th%C3%B4ng%20minh" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-angle-right text-[10px] text-amber-500"></i>
-                <span>Bồn Cầu Thông Minh</span>
-              </a>
-            </li>
-            <li>
-              <a href="products.html?category=Lavabo%20ngh%E1%BB%87%20thu%E1%BA%ADt" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-angle-right text-[10px] text-amber-500"></i>
-                <span>Lavabo Nghệ Thuật</span>
-              </a>
-            </li>
-            <li>
-              <a href="products.html?category=B%E1%BB%93n%20t%E1%BA%AFm%20massage" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-angle-right text-[10px] text-amber-500"></i>
-                <span>Bồn Tắm Massage</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <!-- Category 2: Lavabo Nghệ Thuật -->
+          <a
+            href="products.html?category=Lavabo%20ngh%E1%BB%87%20thu%E1%BA%ADt"
+            class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-lg block"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80"
+              alt="Lavabo nghệ thuật"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:bg-slate-950/70 transition-all duration-500"
+            ></div>
 
-        <!-- Cột 3: Chính sách -->
-        <div>
-          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-5 font-serif border-l-2 border-amber-500 pl-3">
-            Chính Sách & Hỗ Trợ
-          </h4>
-          <ul class="space-y-2.5 text-xs">
-            <li>
-              <a href="#" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-shield-halved text-[10px] text-amber-500"></i>
-                <span>Chính Sách Bảo Hành 10 Năm</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-rotate-left text-[10px] text-amber-500"></i>
-                <span>Chính Sách Đổi Trả 30 Ngày</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-truck text-[10px] text-amber-500"></i>
-                <span>Vận Chuyển & Lắp Đặt</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-lock text-[10px] text-amber-500"></i>
-                <span>Chính Sách Bảo Mật</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-amber-400 transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-file-contract text-[10px] text-amber-500"></i>
-                <span>Chứng Chỉ CO/CQ Châu Âu</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Cột 4: Liên hệ & Newsletter -->
-        <div>
-          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-5 font-serif border-l-2 border-amber-500 pl-3">
-            Nhận Bản Tin Ưu Đãi
-          </h4>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">
-            Đăng ký để nhận catalogue bộ sưu tập mới nhất và ưu đãi đặc quyền lên tới 20% cho dự án biệt thự.
-          </p>
-          <form onsubmit="event.preventDefault(); showToast('Đăng ký nhận tin thành công! AquaLux xin cảm ơn Quý khách.', 'success'); this.reset();" class="space-y-2">
-            <div class="relative">
-              <input 
-                type="email" 
-                required 
-                placeholder="Email của Quý khách..."
-                class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-amber-500 focus:outline-none"
-              />
-              <button type="submit" class="absolute right-1 top-1 bottom-1 px-3 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-xs font-semibold transition-colors">
-                Gửi
-              </button>
+            <div
+              class="absolute inset-0 p-6 flex flex-col justify-end text-white z-10"
+            >
+              <span
+                class="text-xs text-amber-400 font-bold uppercase tracking-widest mb-1"
+                >Chế tác thủ công</span
+              >
+              <h3
+                class="font-serif text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors"
+              >
+                Lavabo Nghệ Thuật
+              </h3>
+              <p
+                class="text-xs text-slate-300 leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500"
+              >
+                Đá cẩm thạch nguyên khối Nero Marquina, men sứ mạ vàng PVD đỉnh
+                cao điêu khắc Ý.
+              </p>
+              <div
+                class="flex items-center gap-2 text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <span>Xem 5 mẫu sản phẩm</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </div>
             </div>
-          </form>
-          <div class="mt-4 text-[11px] text-slate-500">
-            Tổng đài VIP: <strong class="text-amber-400">1900 8888</strong>
+          </a>
+
+          <!-- Category 3: Vòi Sen Cao Cấp -->
+          <a
+            href="products.html?category=V%C3%B2i%20sen%20cao%20c%E1%BA%A5p"
+            class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-lg block"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80"
+              alt="Vòi sen cao cấp"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:bg-slate-950/70 transition-all duration-500"
+            ></div>
+
+            <div
+              class="absolute inset-0 p-6 flex flex-col justify-end text-white z-10"
+            >
+              <span
+                class="text-xs text-amber-400 font-bold uppercase tracking-widest mb-1"
+                >Công nghệ khóa nhiệt</span
+              >
+              <h3
+                class="font-serif text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors"
+              >
+                Vòi Sen Cao Cấp
+              </h3>
+              <p
+                class="text-xs text-slate-300 leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500"
+              >
+                Bát sen âm trần đa sắc, công nghệ khóa nhiệt an toàn 38°C và chế
+                độ massage sương mù.
+              </p>
+              <div
+                class="flex items-center gap-2 text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <span>Xem 5 mẫu sản phẩm</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- Category 4: Gạch men cao cấp -->
+          <a
+            href="products.html?category=Gạch%20men%20cao%20cấp"
+            class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-lg block"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
+              alt="Gạch men cao cấp"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:bg-slate-950/70 transition-all duration-500"
+            ></div>
+
+            <div
+              class="absolute inset-0 p-6 flex flex-col justify-end text-white z-10"
+            >
+              <span
+                class="text-xs text-amber-400 font-bold uppercase tracking-widest mb-1"
+                >Họa tiết hiện đại</span
+              >
+              <h3
+                class="font-serif text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors"
+              >
+                Gạch men cao cấp
+              </h3>
+              <p
+                class="text-xs text-slate-300 leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500"
+              >
+                Xương gạch Granite siêu cứng, phủ men Nano kháng khuẩn chống
+                xước, vân đá tự nhiên sang trọng.
+              </p>
+              <div
+                class="flex items-center gap-2 text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-300"
+              >
+                <span>Xem 5 mẫu sản phẩm</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Direct link to all products -->
+        <div class="mt-12 text-center">
+          <a
+            href="products.html"
+            class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-amber-600 pb-1 border-b-2 border-slate-900 hover:border-amber-600 transition-all"
+          >
+            <span>Xem tất cả 20 sản phẩm cao cấp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES SECTION (Dịch vụ) ================= -->
+    <!-- Khối nền tối (slate-900) bo góc lớn, chia 3 cột. Icon đổi sang trắng khi hover -->
+    <section id="features" class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden border border-slate-800"
+        >
+          <!-- Decorative Glow -->
+          <div
+            class="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-96 h-96 bg-amber-700/10 rounded-full blur-3xl pointer-events-none"
+          ></div>
+
+          <!-- Section Header -->
+          <div class="max-w-2xl mb-12 sm:mb-16 relative z-10">
+            <span
+              class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-500/20"
+            >
+              Đặc Quyền
+            </span>
+            <h2
+              class="font-serif text-3xl sm:text-4xl font-black mt-4 text-white"
+            >
+              Chuẩn Mực Dịch Vụ 6 Sao Dành Riêng Cho Quý Khách
+            </h2>
+          </div>
+
+          <!-- 3 Columns Grid -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 relative z-10"
+          >
+            <!-- Column 1: Hàng chính hãng -->
+            <div
+              class="group p-8 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 hover:border-amber-500/40 transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-slate-900 border border-amber-500/30 flex items-center justify-center mb-6 group-hover:bg-amber-600 transition-all duration-300 shadow-lg"
+              >
+                <i
+                  class="fa-solid fa-certificate text-2xl text-amber-400 group-hover:text-white transition-colors duration-300"
+                ></i>
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors"
+              >
+                Hàng Chính Hãng 100%
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Nhập khẩu nguyên chiếc từ các thương hiệu phòng tắm lừng danh
+                Đức, Ý và Thụy Sĩ. Đầy đủ chứng chỉ xuất xứ CO và kiểm định chất
+                lượng CQ quốc tế.
+              </p>
+            </div>
+
+            <!-- Column 2: Bảo hành đặc quyền -->
+            <div
+              class="group p-8 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 hover:border-amber-500/40 transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-slate-900 border border-amber-500/30 flex items-center justify-center mb-6 group-hover:bg-amber-600 transition-all duration-300 shadow-lg"
+              >
+                <i
+                  class="fa-solid fa-shield-halved text-2xl text-amber-400 group-hover:text-white transition-colors duration-300"
+                ></i>
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors"
+              >
+                Bảo Hành Đặc Quyền 10 Năm
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Chính sách bảo hành tận nhà chu đáo lên tới 10 năm cho thân sứ
+                và men phủ. Cam kết 1 đổi 1 trong vòng 30 ngày đầu tiên nếu phát
+                sinh bất kỳ lỗi kỹ thuật nào.
+              </p>
+            </div>
+
+            <!-- Column 3: Vận chuyển & Lắp đặt -->
+            <div
+              class="group p-8 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 hover:border-amber-500/40 transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-slate-900 border border-amber-500/30 flex items-center justify-center mb-6 group-hover:bg-amber-600 transition-all duration-300 shadow-lg"
+              >
+                <i
+                  class="fa-solid fa-truck-fast text-2xl text-amber-400 group-hover:text-white transition-colors duration-300"
+                ></i>
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors"
+              >
+                Vận Chuyển & Lắp Đặt Tận Tâm
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Miễn phí vận chuyển và lắp đặt hoàn thiện bởi đội ngũ kỹ thuật
+                viên tay nghề cao được đào tạo bài bản từ chính hãng. Kiểm tra
+                áp lực nước tỉ mỉ trước khi bàn giao.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION (Liên hệ Card 2 phần) ================= -->
+    <!-- Dạng Card chia 2 phần: Cột trái (40%) nền tối, Cột phải (60%) nền trắng -->
+    <section id="contact" class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Card Container -->
+        <div
+          class="rounded-3xl shadow-2xl overflow-hidden border border-slate-200/80 flex flex-col lg:flex-row bg-white"
+        >
+          <!-- Cột trái (40%): Nền tối chứa thông tin showroom -->
+          <div
+            class="lg:w-[40%] bg-slate-900 text-white p-8 sm:p-12 lg:p-14 flex flex-col justify-between relative overflow-hidden"
+          >
+            <div
+              class="absolute -bottom-16 -left-16 w-64 h-64 bg-amber-600/10 rounded-full blur-2xl"
+            ></div>
+
+            <div class="relative z-10">
+              <span
+                class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-500/20"
+              >
+                Trực Tiếp Tại Showroom
+              </span>
+              <h2 class="font-serif text-3xl font-black mt-4 mb-4 text-white">
+                Ghé Thăm Showroom
+              </h2>
+              <p class="text-sm text-slate-300 leading-relaxed mb-8">
+                Trải nghiệm thực tế không gian phòng tắm mẫu siêu sang và nhận
+                tư vấn chuyên sâu cùng kiến trúc sư nội thất của chúng tôi.
+              </p>
+
+              <!-- Contact Details -->
+              <div class="space-y-6">
+                <!-- Address -->
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 shrink-0 mt-0.5"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1"
+                    >
+                      Địa chỉ Showroom
+                    </h4>
+                    <p class="text-sm text-slate-200 font-medium">
+                      Hà Nội: Số nhà 12 thôn Khoang Sau, Đoài Phương
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Hotline -->
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 shrink-0 mt-0.5"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1"
+                    >
+                      Hotline Hỗ Trợ 24/7
+                    </h4>
+                    <a
+                      href="tel:0921852999"
+                      class="text-base text-white font-bold hover:text-amber-400 transition-colors"
+                      >0921 852 999</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 shrink-0 mt-0.5"
+                  >
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1"
+                    >
+                      Email Liên Hệ
+                    </h4>
+                    <a
+                      href="mailto:contact@aqualux.vn"
+                      class="text-sm text-slate-200 hover:text-amber-400 transition-colors"
+                      >contact@aqualux.vn</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 shrink-0 mt-0.5"
+                  >
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1"
+                    >
+                      Giờ Mở Cửa
+                    </h4>
+                    <p class="text-sm text-slate-200">
+                      08:00 - 21:00 (Từ Thứ Hai đến Chủ Nhật)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom guarantee quote -->
+            <div
+              class="mt-8 pt-6 border-t border-slate-800 relative z-10 flex items-center gap-3"
+            >
+              <i
+                class="fa-solid fa-quote-left text-amber-500 text-xl opacity-60"
+              ></i>
+              <span class="text-xs text-slate-400 italic"
+                >"Chúng tôi tạo nên không gian nơi sự thư giãn đạt tới đỉnh cao
+                nghệ thuật."</span
+              >
+            </div>
+          </div>
+
+          <!-- Cột phải (60%): Nền trắng chứa Form liên hệ -->
+          <div class="lg:w-[60%] p-8 sm:p-12 lg:p-14 bg-white">
+            <div class="max-w-xl">
+              <span
+                class="text-xs font-bold uppercase tracking-[0.25em] text-amber-600 bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200"
+              >
+                Đăng Ký Tư Vấn
+              </span>
+              <h3
+                class="font-serif text-2xl sm:text-3xl font-black text-slate-900 mt-4 mb-2"
+              >
+                Nhận Báo Giá & Bản Vẽ Phối Cảnh 3D
+              </h3>
+              <p class="text-sm text-slate-500 mb-8">
+                Vui lòng để lại thông tin, đội ngũ chuyên viên kiến trúc của
+                chúng tôi sẽ chủ động liên hệ trong 15 phút.
+              </p>
+
+              <form id="contact-form" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <!-- Họ tên -->
+                  <div>
+                    <label
+                      class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    >
+                      Họ và Tên <span class="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Ví dụ: Nguyễn Văn An"
+                      class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all text-sm text-slate-800 bg-slate-50/50"
+                    />
+                  </div>
+
+                  <!-- Số điện thoại -->
+                  <div>
+                    <label
+                      class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    >
+                      Số Điện Thoại <span class="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      required
+                      placeholder="Ví dụ: 0912 345 678"
+                      class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all text-sm text-slate-800 bg-slate-50/50"
+                    />
+                  </div>
+                </div>
+
+                <!-- Dịch vụ quan tâm -->
+                <div>
+                  <label
+                    class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                  >
+                    Dịch Vụ & Sản Phẩm Quan Tâm
+                  </label>
+                  <select
+                    name="service"
+                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all text-sm text-slate-800 bg-slate-50/50"
+                  >
+                    <option value="Tư vấn trọn gói phòng tắm biệt thự">
+                      Tư vấn trọn gói phòng tắm biệt thự / Penthouse
+                    </option>
+                    <option value="Báo giá bồn cầu thông minh">
+                      Báo giá bồn cầu thông minh
+                    </option>
+                    <option value="Báo giá gạch men cao cấp">
+                      Báo giá gạch men & đá ốp lát cao cấp
+                    </option>
+                    <option value="Báo giá hệ thống sen tắm nhiệt độ">
+                      Báo giá hệ thống sen tắm nhiệt độ
+                    </option>
+                    <option value="Thiết kế và thi công theo yêu cầu">
+                      Thiết kế và thi công theo yêu cầu
+                    </option>
+                  </select>
+                </div>
+
+                <!-- Lời nhắn -->
+                <div>
+                  <label
+                    class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                  >
+                    Lời Nhắn / Yêu Cầu Cụ Thể
+                  </label>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Quý khách có thể chia sẻ thêm về diện tích phòng tắm, phong cách yêu thích hoặc tiến độ công trình..."
+                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all text-sm text-slate-800 bg-slate-50/50 resize-none"
+                  ></textarea>
+                </div>
+
+                <!-- Nút Gửi -->
+                <div>
+                  <button
+                    type="submit"
+                    class="w-full py-4 px-8 rounded-xl bg-slate-900 hover:bg-amber-600 text-white font-bold text-sm tracking-wider uppercase transition-all duration-300 shadow-xl shadow-slate-900/10 hover:shadow-amber-600/30 flex items-center justify-center gap-2 group"
+                  >
+                    <span>Gửi Yêu Cầu Tư Vấn Ngay</span>
+                    <i
+                      class="fa-solid fa-paper-plane text-xs transform group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform"
+                    ></i>
+                  </button>
+                </div>
+
+                <p class="text-center text-xs text-slate-400">
+                  <i class="fa-solid fa-lock text-[10px] mr-1"></i>
+                  Cam kết bảo mật 100% thông tin cá nhân của Quý khách theo
+                  chuẩn GDPR.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER SECTION (slate-950 chia 4 cột) ================= -->
+    <footer
+      class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-900"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- 4 Columns Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-14 border-b border-slate-800/80"
+        >
+          <!-- Cột 1: Giới thiệu -->
+          <div>
+            <a href="index.html" class="flex items-center gap-3 mb-5 group">
+              <img
+                src="nhungnhan.svg"
+                alt="Nhung Nhàn Logo"
+                class="w-9 h-9 object-contain brightness-0 invert group-hover:scale-105 transition-transform"
+              />
+              <div>
+                <span class="font-serif text-2xl font-black text-white"
+                  >Nhung<span class="text-amber-500">Nhàn</span></span
+                >
+                <span
+                  class="block text-[8px] tracking-[0.25em] text-amber-400 font-semibold uppercase -mt-1"
+                  >Nhà Phân Phối Gạch - Thiết bị Vệ Sinh</span
+                >
+              </div>
+            </a>
+            <p class="text-xs text-slate-400 leading-relaxed mb-6">
+              Thương hiệu phân phối thiết bị vệ sinh cao cấp hàng đầu Việt Nam.
+              Nâng tầm nghệ thuật sống với không gian phòng tắm chuẩn nghỉ dưỡng
+              5 sao.
+            </p>
+            <div class="flex items-center gap-3">
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-slate-900 hover:bg-amber-600 text-slate-400 hover:text-white flex items-center justify-center transition-colors text-xs"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-slate-900 hover:bg-amber-600 text-slate-400 hover:text-white flex items-center justify-center transition-colors text-xs"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-slate-900 hover:bg-amber-600 text-slate-400 hover:text-white flex items-center justify-center transition-colors text-xs"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-slate-900 hover:bg-amber-600 text-slate-400 hover:text-white flex items-center justify-center transition-colors text-xs"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cột 2: Liên kết nhanh -->
+          <div>
+            <h4
+              class="text-white text-sm font-bold uppercase tracking-wider mb-5 font-serif border-l-2 border-amber-500 pl-3"
+            >
+              Liên Kết Nhanh
+            </h4>
+            <ul class="space-y-2.5 text-xs">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i
+                    class="fa-solid fa-angle-right text-[10px] text-amber-500"
+                  ></i>
+                  <span>Trang Chủ</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i
+                    class="fa-solid fa-angle-right text-[10px] text-amber-500"
+                  ></i>
+                  <span>Tất Cả Sản Phẩm</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="products.html?category=B%E1%BB%93n%20c%E1%BA%A7u%20th%C3%B4ng%20minh"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i
+                    class="fa-solid fa-angle-right text-[10px] text-amber-500"
+                  ></i>
+                  <span>Bồn Cầu Thông Minh</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="products.html?category=Lavabo%20ngh%E1%BB%87%20thu%E1%BA%ADt"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i
+                    class="fa-solid fa-angle-right text-[10px] text-amber-500"
+                  ></i>
+                  <span>Lavabo Nghệ Thuật</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="products.html?category=G%E1%BA%A1ch%20men%20cao%20c%E1%BA%A5p"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i
+                    class="fa-solid fa-angle-right text-[10px] text-amber-500"
+                  ></i>
+                  <span>Gạch Men Cao Cấp</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Chính sách -->
+          <div>
+            <h4
+              class="text-white text-sm font-bold uppercase tracking-wider mb-5 font-serif border-l-2 border-amber-500 pl-3"
+            >
+              Chính Sách & Hỗ Trợ
+            </h4>
+            <ul class="space-y-2.5 text-xs">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i
+                    class="fa-solid fa-shield-halved text-[10px] text-amber-500"
+                  ></i>
+                  <span>Chính Sách Bảo Hành 10 Năm</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i
+                    class="fa-solid fa-rotate-left text-[10px] text-amber-500"
+                  ></i>
+                  <span>Chính Sách Đổi Trả 30 Ngày</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i class="fa-solid fa-truck text-[10px] text-amber-500"></i>
+                  <span>Vận Chuyển & Lắp Đặt</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i class="fa-solid fa-lock text-[10px] text-amber-500"></i>
+                  <span>Chính Sách Bảo Mật</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-amber-400 transition-colors flex items-center gap-2"
+                >
+                  <i
+                    class="fa-solid fa-file-contract text-[10px] text-amber-500"
+                  ></i>
+                  <span>Chứng Chỉ CO/CQ Châu Âu</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Cột 4: Liên hệ & Newsletter -->
+          <div>
+            <h4
+              class="text-white text-sm font-bold uppercase tracking-wider mb-5 font-serif border-l-2 border-amber-500 pl-3"
+            >
+              Nhận Bản Tin Ưu Đãi
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Đăng ký để nhận catalogue bộ sưu tập mới nhất và ưu đãi đặc quyền
+              lên tới 20% cho dự án biệt thự.
+            </p>
+            <form
+              onsubmit="
+                event.preventDefault();
+                showToast(
+                  'Đăng ký nhận tin thành công! Nhung Nhàn xin cảm ơn Quý khách.',
+                  'success',
+                );
+                this.reset();
+              "
+              class="space-y-2"
+            >
+              <div class="relative">
+                <input
+                  type="email"
+                  required
+                  placeholder="Email của Quý khách..."
+                  class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-amber-500 focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  class="absolute right-1 top-1 bottom-1 px-3 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-xs font-semibold transition-colors"
+                >
+                  Gửi
+                </button>
+              </div>
+            </form>
+            <div class="mt-4 text-[11px] text-slate-500">
+              Tổng đài VIP: <strong class="text-amber-400">0921 852 999</strong>
+            </div>
           </div>
         </div>
 
-      </div>
+        <!-- Bottom Bar -->
+        <div
+          class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4"
+        >
+          <div>© 2026 Nocal. Tất cả quyền được bảo lưu.</div>
 
-      <!-- Bottom Bar -->
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-        <div>
-          © 2026 AquaLux Sanitary Ware. Tất cả quyền được bảo lưu.
-        </div>
-        <div class="flex items-center gap-6">
-          <a href="#" class="hover:text-amber-400 transition-colors">Điều khoản dịch vụ</a>
-          <a href="#" class="hover:text-amber-400 transition-colors">Quyền riêng tư</a>
-          <a href="#" class="hover:text-amber-400 transition-colors">Sơ đồ trang</a>
+          <div>
+            <a
+              href="https://nocalcorp.com/"
+              class="hover:text-amber-400 transition-colors"
+              >Thiết kế bởi Công ty Cổ phần Khoa Học Công nghệ Nocal.</a
+            >
+          </div>
+          <div class="flex items-center gap-6">
+            <a href="#" class="hover:text-amber-400 transition-colors"
+              >Điều khoản dịch vụ</a
+            >
+            <a href="#" class="hover:text-amber-400 transition-colors"
+              >Quyền riêng tư</a
+            >
+            <a href="#" class="hover:text-amber-400 transition-colors"
+              >Sơ đồ trang</a
+            >
+          </div>
         </div>
       </div>
+    </footer>
 
+    <!-- ================= FLOATING CTA (Mobile Only with animate-bounce) ================= -->
+    <!-- Nút gọi điện tròn màu amber-600 cố định góc phải dưới, chỉ hiện trên Mobile -->
+    <div class="md:hidden fixed bottom-6 right-6 z-40">
+      <a
+        href="tel:0921852999"
+        class="w-14 h-14 rounded-full bg-amber-600 hover:bg-amber-500 text-white shadow-2xl shadow-amber-600/50 flex items-center justify-center animate-bounce border-2 border-white focus:outline-none"
+        title="Gọi ngay Hotline 0921 852 999"
+        aria-label="Gọi điện Hotline"
+      >
+        <i class="fa-solid fa-phone text-xl"></i>
+      </a>
     </div>
-  </footer>
 
-
-  <!-- ================= FLOATING CTA (Mobile Only with animate-bounce) ================= -->
-  <!-- Nút gọi điện tròn màu amber-600 cố định góc phải dưới, chỉ hiện trên Mobile -->
-  <div class="md:hidden fixed bottom-6 right-6 z-40">
-    <a 
-      href="tel:19008888" 
-      class="w-14 h-14 rounded-full bg-amber-600 hover:bg-amber-500 text-white shadow-2xl shadow-amber-600/50 flex items-center justify-center animate-bounce border-2 border-white focus:outline-none"
-      title="Gọi ngay Hotline 1900 8888"
-      aria-label="Gọi điện Hotline"
-    >
-      <i class="fa-solid fa-phone text-xl"></i>
-    </a>
-  </div>
-
-  <!-- Main JavaScript Logic File -->
-  <script src="main.js"></script>
-</body>
+    <!-- Main JavaScript Logic File -->
+    <script src="main.js"></script>
+  </body>
 </html>

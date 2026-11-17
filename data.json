@@ -4,7 +4,7 @@
     "name": "Bồn Cầu Thông Minh AquaLux Royal S1",
     "category": "Bồn cầu thông minh",
     "price": 38500000,
-    "image": "https://images.unsplash.com/photo-1585058178216-5643a5ba8eb8?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?auto=format&fit=crop&w=800&q=80",
     "description": "Tích hợp công nghệ cảm ứng mở nắp tự động, vòi rửa đa chế độ diệt khuẩn UV, sưởi ấm bệ ngồi và men sứ CeFiONtect chống bám bẩn tuyệt đối."
   },
   {
@@ -108,7 +108,7 @@
     "name": "Hệ Thống Sen Tắm Massage Thủy Lực AquaLux HydroSpa",
     "category": "Vòi sen cao cấp",
     "price": 27500000,
-    "image": "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "description": "Tích hợp 6 mắt phun massage toàn thân áp lực mạnh, bát sen đa chế độ phun thác nước và phun sương thư giãn đỉnh cao."
   },
   {
@@ -121,42 +121,42 @@
   },
   {
     "id": 16,
-    "name": "Bồn Tắm Massage Thủy Lực AquaLux Grand Oasis",
-    "category": "Bồn tắm massage",
-    "price": 68000000,
-    "image": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80",
-    "description": "Acrylic Lucite cao cấp đúc nguyên khối cách nhiệt hoàn hảo, hệ thống 12 mắt sục khí ozone thải độc và đèn LED viền nước thư giãn."
+    "name": "Gạch Men Khổ Lớn AquaLux Calacatta Gold 120x240",
+    "category": "Gạch men cao cấp",
+    "price": 2450000,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "description": "Xương gạch Porcelain siêu đặc nhập khẩu Tây Ban Nha, bề mặt men vi tinh thể bóng gương, đường vân mây Calacatta ánh vàng vĩnh cửu chống trầy xước."
   },
   {
     "id": 17,
-    "name": "Bồn Tắm Độc Lập Tròn AquaLux Muse",
-    "category": "Bồn tắm massage",
-    "price": 42000000,
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
-    "description": "Đường nét bo tròn mềm mại chuẩn thiết kế Ý, dung tích lớn cho trải nghiệm ngâm bồn thoải mái nhất, chống ố và trầy xước vượt trội."
+    "name": "Gạch Đá Nung Kết Sintered Stone Nero Marquina 80x160",
+    "category": "Gạch men cao cấp",
+    "price": 1850000,
+    "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+    "description": "Công nghệ đá nung kết nén 30.000 tấn chống thấm nước tuyệt đối 0.01%, bề mặt men mờ satin chống trơn trượt R10 chuẩn Châu Âu."
   },
   {
     "id": 18,
-    "name": "Bồn Tắm Nằm Massage Cao Cấp AquaLux Platinum Duo",
-    "category": "Bồn tắm massage",
-    "price": 79000000,
-    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-    "description": "Kích thước 1.8m dành cho 2 người, gối tựa đầu da êm ái, bộ gia nhiệt giữ ấm nước liên tục và hệ thống tạo bọt khí nano dưỡng da."
+    "name": "Gạch Men Nghệ Thuật AquaLux Terrazzo Venezia 60x120",
+    "category": "Gạch men cao cấp",
+    "price": 1250000,
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "description": "Hạt đá thạch anh tự nhiên kết tinh tinh xảo phong cách Venice, phủ men nano kháng khuẩn ion bạc ngăn ngừa rêu mốc tối đa trong phòng tắm ẩm ướt."
   },
   {
     "id": 19,
-    "name": "Bồn Tắm Đá Nhân Tạo Nguyên Khối AquaLux Calacatta",
-    "category": "Bồn tắm massage",
-    "price": 89000000,
-    "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
-    "description": "Đúc từ bột đá tự nhiên kết hợp sợi thủy tinh hữu cơ cao cấp, bề mặt satin mượt mà như lụa, giữ ấm nước gấp 3 lần bồn thông thường."
+    "name": "Gạch Ốp Tường Khổ Lớn AquaLux Travertino Romano 120x260",
+    "category": "Gạch men cao cấp",
+    "price": 2890000,
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+    "description": "Tái hiện vân đá travertine trầm tích La Mã với hiệu ứng 3D Carving rãnh chìm tinh tế, liền mạch không gian biệt thự và penthouse sang trọng."
   },
   {
     "id": 20,
-    "name": "Bồn Tắm Góc Massage Tiết Kiệm Không Gian AquaLux Corner",
-    "category": "Bồn tắm massage",
-    "price": 38000000,
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
-    "description": "Thiết kế tối ưu góc phòng tắm master, mặt kính cường lực trong suốt quan sát dòng chảy massage, hệ thống chống rò điện an toàn tuyệt đối."
+    "name": "Gạch Thẻ Trang Trí Men Gốm Rạn Thủ Công AquaLux Emerald",
+    "category": "Gạch men cao cấp",
+    "price": 950000,
+    "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
+    "description": "Chế tác gốm nung hai lần phủ men ngọc lục bảo Emerald, tạo điểm nhấn nghệ thuật độc bản cho mảng tường lavabo và phòng tắm master thượng lưu."
   }
 ]

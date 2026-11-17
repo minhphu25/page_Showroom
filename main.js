@@ -3,201 +3,18 @@
  * main.js - Core UI, Data & SEO Logic (Pure Vanilla JavaScript)
  */
 
-// Fallback data in case file:// protocol restricts fetch in local browsers
-const FALLBACK_DATA = [
-  {
-    "id": 1,
-    "name": "Bồn Cầu Thông Minh AquaLux Royal S1",
-    "category": "Bồn cầu thông minh",
-    "price": 38500000,
-    "image": "https://images.unsplash.com/photo-1585058178216-5643a5ba8eb8?auto=format&fit=crop&w=800&q=80",
-    "description": "Tích hợp công nghệ cảm ứng mở nắp tự động, vòi rửa đa chế độ diệt khuẩn UV, sưởi ấm bệ ngồi và men sứ CeFiONtect chống bám bẩn tuyệt đối."
-  },
-  {
-    "id": 2,
-    "name": "Bồn Cầu Điện Tử AquaLux Neo Diamond",
-    "category": "Bồn cầu thông minh",
-    "price": 45000000,
-    "image": "https://images.unsplash.com/photo-1564540574859-0dfb63985953?auto=format&fit=crop&w=800&q=80",
-    "description": "Thiết kế nguyên khối kim cương sang trọng, điều khiển từ xa cảm ứng không dây, hệ thống xả xoáy kép Tornado siêu êm và tiết kiệm nước."
-  },
-  {
-    "id": 3,
-    "name": "Bồn Cầu Treo Tường Thông Minh AquaLux Pure",
-    "category": "Bồn cầu thông minh",
-    "price": 29800000,
-    "image": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
-    "description": "Thiết kế giấu két nước tinh gọn cho không gian hiện đại, nút xả cảm ứng LED viền vàng, chịu tải trọng lên tới 400kg."
-  },
-  {
-    "id": 4,
-    "name": "Bồn Cầu Thông Minh AquaLux Black Velvet Edition",
-    "category": "Bồn cầu thông minh",
-    "price": 52000000,
-    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-    "description": "Phiên bản giới hạn phủ men đen mờ nhám siêu sang, đèn LED ban đêm dịu mắt, sấy khô ion âm khử mùi sinh học Plasma."
-  },
-  {
-    "id": 5,
-    "name": "Bồn Cầu Điện Tử AquaLux Elegance Pro",
-    "category": "Bồn cầu thông minh",
-    "price": 34900000,
-    "image": "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80",
-    "description": "Cảm biến đá chân mở nắp và tự xả, chế độ rửa massage nước ấm bọt khí tạo cảm giác êm ái, bệ ngồi kháng khuẩn Ag+."
-  },
-  {
-    "id": 6,
-    "name": "Lavabo Đá Cẩm Thạch Tự Nhiên AquaLux Nero",
-    "category": "Lavabo nghệ thuật",
-    "price": 18500000,
-    "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80",
-    "description": "Chế tác thủ công từ đá cẩm thạch nguyên khối Nero Marquina, vân đá độc bản với viền bo mềm mại tôn lên đẳng cấp không gian."
-  },
-  {
-    "id": 7,
-    "name": "Chậu Rửa Nghệ Thuật AquaLux Golden Leaf",
-    "category": "Lavabo nghệ thuật",
-    "price": 15200000,
-    "image": "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=800&q=80",
-    "description": "Mặt ngoài mạ titan vàng kim PVD chống xước, bề mặt trong phủ men nano pha lê siêu mịn sáng bóng bền bỉ vĩnh cửu."
-  },
-  {
-    "id": 8,
-    "name": "Lavabo Đặt Bàn Gốm Thủ Công AquaLux Terrazzo",
-    "category": "Lavabo nghệ thuật",
-    "price": 9800000,
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
-    "description": "Phong cách Indochine hòa quyện Châu Âu đương đại, hoa văn hạt đá tự nhiên tinh xảo, bề mặt chống ố vàng tuyệt đối."
-  },
-  {
-    "id": 9,
-    "name": "Lavabo Treo Nghệ Thuật AquaLux Floating Slate",
-    "category": "Lavabo nghệ thuật",
-    "price": 12600000,
-    "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
-    "description": "Tích hợp mặt bàn nguyên tấm đá nhân tạo gốc thạch anh, chống thấm nước 100%, đi kèm thanh treo khăn mạ crôm bóng bẩy."
-  },
-  {
-    "id": 10,
-    "name": "Chậu Rửa Lavabo Trụ Đứng AquaLux Monolith",
-    "category": "Lavabo nghệ thuật",
-    "price": 26000000,
-    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
-    "description": "Lavabo trụ đứng nguyên khối phong cách điêu khắc tối giản, phù hợp các biệt thự xa hoa và penthouse đỉnh cao."
-  },
-  {
-    "id": 11,
-    "name": "Hệ Thống Sen Tắm Cây Nhiệt Độ AquaLux Gold Rain",
-    "category": "Vòi sen cao cấp",
-    "price": 22500000,
-    "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80",
-    "description": "Công nghệ khóa nhiệt an toàn 38°C Vernet Pháp, bát sen trần 400mm phun mưa trộn khí Oxy, mạ PVD vàng Champagne đẳng cấp."
-  },
-  {
-    "id": 12,
-    "name": "Sen Âm Tường Thông Minh AquaLux Digital Pro",
-    "category": "Vòi sen cao cấp",
-    "price": 31000000,
-    "image": "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=800&q=80",
-    "description": "Màn hình LED hiển thị nhiệt độ và thời gian tắm chạy bằng áp lực nước thủy điện không dùng pin, 4 phím bấm piano chuyển chế độ mượt mà."
-  },
-  {
-    "id": 13,
-    "name": "Sen Cây Đứng Điều Nhiệt AquaLux Matte Black",
-    "category": "Vòi sen cao cấp",
-    "price": 16800000,
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
-    "description": "Chất liệu đồng thau tiêu chuẩn Châu Âu khử chì, sơn tĩnh điện đen mờ phong cách Bắc Âu Scandinavian, vòi xịt áp lực cao tiện lợi."
-  },
-  {
-    "id": 14,
-    "name": "Hệ Thống Sen Tắm Massage Thủy Lực AquaLux HydroSpa",
-    "category": "Vòi sen cao cấp",
-    "price": 27500000,
-    "image": "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
-    "description": "Tích hợp 6 mắt phun massage toàn thân áp lực mạnh, bát sen đa chế độ phun thác nước và phun sương thư giãn đỉnh cao."
-  },
-  {
-    "id": 15,
-    "name": "Vòi Sen Âm Trần Đa Sắc AquaLux Chroma Therapy",
-    "category": "Vòi sen cao cấp",
-    "price": 36000000,
-    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-    "description": "Bát sen âm trần kích thước lớn 500x500mm tích hợp ánh sáng LED trị liệu tinh thần theo nhịp điệu nước, kết nối Bluetooth phát nhạc."
-  },
-  {
-    "id": 16,
-    "name": "Bồn Tắm Massage Thủy Lực AquaLux Grand Oasis",
-    "category": "Bồn tắm massage",
-    "price": 68000000,
-    "image": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80",
-    "description": "Acrylic Lucite cao cấp đúc nguyên khối cách nhiệt hoàn hảo, hệ thống 12 mắt sục khí ozone thải độc và đèn LED viền nước thư giãn."
-  },
-  {
-    "id": 17,
-    "name": "Bồn Tắm Độc Lập Tròn AquaLux Muse",
-    "category": "Bồn tắm massage",
-    "price": 42000000,
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
-    "description": "Đường nét bo tròn mềm mại chuẩn thiết kế Ý, dung tích lớn cho trải nghiệm ngâm bồn thoải mái nhất, chống ố và trầy xước vượt trội."
-  },
-  {
-    "id": 18,
-    "name": "Bồn Tắm Nằm Massage Cao Cấp AquaLux Platinum Duo",
-    "category": "Bồn tắm massage",
-    "price": 79000000,
-    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-    "description": "Kích thước 1.8m dành cho 2 người, gối tựa đầu da êm ái, bộ gia nhiệt giữ ấm nước liên tục và hệ thống tạo bọt khí nano dưỡng da."
-  },
-  {
-    "id": 19,
-    "name": "Bồn Tắm Đá Nhân Tạo Nguyên Khối AquaLux Calacatta",
-    "category": "Bồn tắm massage",
-    "price": 89000000,
-    "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
-    "description": "Đúc từ bột đá tự nhiên kết hợp sợi thủy tinh hữu cơ cao cấp, bề mặt satin mượt mà như lụa, giữ ấm nước gấp 3 lần bồn thông thường."
-  },
-  {
-    "id": 20,
-    "name": "Bồn Tắm Góc Massage Tiết Kiệm Không Gian AquaLux Corner",
-    "category": "Bồn tắm massage",
-    "price": 38000000,
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
-    "description": "Thiết kế tối ưu góc phòng tắm master, mặt kính cường lực trong suốt quan sát dòng chảy massage, hệ thống chống rò điện an toàn tuyệt đối."
-  }
-];
-
-const FALLBACK_SEO = {
-  "home": {
-    "title": "AquaLux - Showroom Thiết Bị Vệ Sinh Cao Cấp & Sang Trọng",
-    "description": "AquaLux chuyên phân phối thiết bị vệ sinh nhập khẩu Châu Âu chính hãng: bồn cầu thông minh, lavabo đá tự nhiên, sen tắm nhiệt độ, bồn tắm massage cao cấp.",
-    "keywords": "thiết bị vệ sinh cao cấp, bồn cầu thông minh, lavabo nghệ thuật, vòi sen âm tường, bồn tắm massage, showroom aqualux",
-    "ogTitle": "AquaLux - Đỉnh Cao Thiết Bị Vệ Sinh & Phòng Tắm Sang Trọng",
-    "ogDescription": "Khám phá bộ sưu tập thiết bị phòng tắm chuẩn thượng lưu tại AquaLux. Cam kết hàng chính hãng 100%, bảo hành 10 năm tại nhà.",
-    "ogImage": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
-  },
-  "products": {
-    "title": "Bộ Sưu Tập Thiết Bị Vệ Sinh Cao Cấp | AquaLux Official",
-    "description": "Danh mục sản phẩm thiết bị vệ sinh cao cấp AquaLux: bồn cầu điện tử cảm ứng, lavabo thủ công, sen tắm mạ vàng PVD, bồn tắm thủy lực Jacuzzi.",
-    "keywords": "bộ sưu tập aqualux, giá bồn cầu thông minh, chậu lavabo mạ vàng, sen cây nhiệt độ, bồn tắm độc lập",
-    "ogTitle": "Danh Mục Sản Phẩm Thiết Bị Vệ Sinh AquaLux Cao Cấp",
-    "ogDescription": "Tìm kiếm và lựa chọn thiết bị phòng tắm đẳng cấp cho biệt thự, penthouse và căn hộ cao cấp tại AquaLux.",
-    "ogImage": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80"
-  }
-};
-
 /* ==========================================================================
    1. CORE UI LOGIC (Header Scroll, Mobile Menu, Modal, Toast)
    ========================================================================== */
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   initHeaderScroll();
   initMobileMenu();
   initSeo();
   initContactForm();
 
   // If on products page, initialize product catalog logic
-  if (document.getElementById('products-grid')) {
+  if (document.getElementById("products-grid")) {
     initProductsPage();
   }
 });
@@ -208,69 +25,105 @@ document.addEventListener('DOMContentLoaded', () => {
  * When at top -> transparent background
  */
 function initHeaderScroll() {
-  const header = document.getElementById('main-header');
+  const header = document.getElementById("main-header");
   if (!header) return;
 
   const updateHeader = () => {
     const isScrolled = window.scrollY > 20;
     if (isScrolled) {
-      header.classList.add('header-scrolled', 'bg-white/95', 'backdrop-blur-md', 'shadow-md', 'py-3');
-      header.classList.remove('header-transparent', 'bg-transparent', 'py-5');
+      header.classList.add(
+        "header-scrolled",
+        "bg-white/95",
+        "backdrop-blur-md",
+        "shadow-md",
+        "py-3",
+      );
+      header.classList.remove("header-transparent", "bg-transparent", "py-5");
 
       // Adjust text colors for links & logo: force dark slate on white background
-      header.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('text-white', 'text-slate-100', 'hover:text-amber-300');
-        link.classList.add('text-slate-800', 'hover:text-amber-600');
+      header.querySelectorAll(".nav-link").forEach((link) => {
+        link.classList.remove(
+          "text-white",
+          "text-slate-100",
+          "hover:text-amber-300",
+        );
+        link.classList.add("text-slate-800", "hover:text-amber-600");
       });
 
-      const logoTitle = header.querySelector('.logo-title');
+      const logoTitle = header.querySelector(".logo-title");
       if (logoTitle) {
-        logoTitle.classList.remove('text-white');
-        logoTitle.classList.add('text-slate-900');
+        logoTitle.classList.remove("text-white");
+        logoTitle.classList.add("text-slate-900");
       }
 
-      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileBtn = document.getElementById("mobile-menu-btn");
       if (mobileBtn) {
-        mobileBtn.classList.remove('text-white');
-        mobileBtn.classList.add('text-slate-800');
+        mobileBtn.classList.remove("text-white");
+        mobileBtn.classList.add("text-slate-800");
       }
 
-      const hotlineBtn = header.querySelector('.hotline-btn');
+      const hotlineBtn = header.querySelector(".hotline-btn");
       if (hotlineBtn) {
-        hotlineBtn.classList.remove('border-white/30', 'text-white', 'hover:bg-white/10');
-        hotlineBtn.classList.add('border-amber-600', 'text-amber-600', 'hover:bg-amber-50');
+        hotlineBtn.classList.remove(
+          "border-white/30",
+          "text-white",
+          "hover:bg-white/10",
+        );
+        hotlineBtn.classList.add(
+          "border-amber-600",
+          "text-amber-600",
+          "hover:bg-amber-50",
+        );
       }
     } else {
-      header.classList.remove('header-scrolled', 'bg-white/95', 'backdrop-blur-md', 'shadow-md', 'py-3');
-      header.classList.add('header-transparent', 'bg-transparent', 'py-5');
+      header.classList.remove(
+        "header-scrolled",
+        "bg-white/95",
+        "backdrop-blur-md",
+        "shadow-md",
+        "py-3",
+      );
+      header.classList.add("header-transparent", "bg-transparent", "py-5");
 
       // Restore transparent top text colors
-      header.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.add('text-white', 'hover:text-amber-300');
-        link.classList.remove('text-slate-800', 'text-slate-700', 'hover:text-amber-600');
+      header.querySelectorAll(".nav-link").forEach((link) => {
+        link.classList.add("text-white", "hover:text-amber-300");
+        link.classList.remove(
+          "text-slate-800",
+          "text-slate-700",
+          "hover:text-amber-600",
+        );
       });
 
-      const logoTitle = header.querySelector('.logo-title');
+      const logoTitle = header.querySelector(".logo-title");
       if (logoTitle) {
-        logoTitle.classList.add('text-white');
-        logoTitle.classList.remove('text-slate-900');
+        logoTitle.classList.add("text-white");
+        logoTitle.classList.remove("text-slate-900");
       }
 
-      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileBtn = document.getElementById("mobile-menu-btn");
       if (mobileBtn) {
-        mobileBtn.classList.add('text-white');
-        mobileBtn.classList.remove('text-slate-800');
+        mobileBtn.classList.add("text-white");
+        mobileBtn.classList.remove("text-slate-800");
       }
 
-      const hotlineBtn = header.querySelector('.hotline-btn');
+      const hotlineBtn = header.querySelector(".hotline-btn");
       if (hotlineBtn) {
-        hotlineBtn.classList.add('border-white/30', 'text-white', 'hover:bg-white/10');
-        hotlineBtn.classList.remove('border-amber-600', 'text-amber-600', 'hover:bg-amber-50');
+        hotlineBtn.classList.add(
+          "border-white/30",
+          "text-white",
+          "hover:bg-white/10",
+        );
+        hotlineBtn.classList.remove(
+          "border-amber-600",
+          "text-amber-600",
+          "hover:bg-amber-50",
+        );
       }
     }
   };
 
-  window.addEventListener('scroll', updateHeader);
+  window.addEventListener("scroll", updateHeader);
   updateHeader(); // initial run
 }
 
@@ -278,32 +131,32 @@ function initHeaderScroll() {
  * Handle Mobile Navigation Toggle
  */
 function initMobileMenu() {
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
   if (!btn || !menu) return;
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    const icon = btn.querySelector('i');
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    const icon = btn.querySelector("i");
     if (icon) {
-      if (menu.classList.contains('hidden')) {
-        icon.classList.remove('fa-xmark');
-        icon.classList.add('fa-bars');
+      if (menu.classList.contains("hidden")) {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
       } else {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-xmark');
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
       }
     }
   });
 
   // Close menu when clicking a link
-  menu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      menu.classList.add('hidden');
-      const icon = btn.querySelector('i');
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.add("hidden");
+      const icon = btn.querySelector("i");
       if (icon) {
-        icon.classList.remove('fa-xmark');
-        icon.classList.add('fa-bars');
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
       }
     });
   });
@@ -313,21 +166,24 @@ function initMobileMenu() {
  * Contact form handling with feedback toast
  */
 function initContactForm() {
-  const form = document.getElementById('contact-form');
+  const form = document.getElementById("contact-form");
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
     const nameInput = form.querySelector('[name="name"]');
     const phoneInput = form.querySelector('[name="phone"]');
 
     if (!nameInput.value.trim() || !phoneInput.value.trim()) {
-      showToast('Vui lòng điền họ tên và số điện thoại liên hệ.', 'error');
+      showToast("Vui lòng điền họ tên và số điện thoại liên hệ.", "error");
       return;
     }
 
     // Success notification
-    showToast(`Cảm ơn Quý khách ${nameInput.value.trim()}! Chuyên viên tư vấn AquaLux sẽ liên hệ qua SĐT ${phoneInput.value.trim()} trong vòng 15 phút.`, 'success');
+    showToast(
+      `Cảm ơn Quý khách ${nameInput.value.trim()}! Chuyên viên tư vấn  sẽ liên hệ qua SĐT ${phoneInput.value.trim()} trong vòng 15 phút.`,
+      "success",
+    );
     form.reset();
   });
 }
@@ -335,24 +191,27 @@ function initContactForm() {
 /**
  * Show luxury toast notification
  */
-function showToast(message, type = 'success') {
-  let container = document.getElementById('toast-container');
+function showToast(message, type = "success") {
+  let container = document.getElementById("toast-container");
   if (!container) {
-    container = document.createElement('div');
-    container.id = 'toast-container';
-    container.className = 'fixed top-24 right-4 md:right-8 z-50 flex flex-col gap-3 max-w-md w-full px-4 pointer-events-none';
+    container = document.createElement("div");
+    container.id = "toast-container";
+    container.className =
+      "fixed top-24 right-4 md:right-8 z-50 flex flex-col gap-3 max-w-md w-full px-4 pointer-events-none";
     document.body.appendChild(container);
   }
 
-  const toast = document.createElement('div');
-  const isSuccess = type === 'success';
+  const toast = document.createElement("div");
+  const isSuccess = type === "success";
   toast.className = `pointer-events-auto transform transition-all duration-500 translate-y-[-20px] opacity-0 flex items-start gap-4 p-4 rounded-xl shadow-2xl border ${
-    isSuccess ? 'bg-slate-900 border-amber-500/40 text-white' : 'bg-red-900 border-red-500/40 text-white'
+    isSuccess
+      ? "bg-slate-900 border-amber-500/40 text-white"
+      : "bg-red-900 border-red-500/40 text-white"
   }`;
 
   toast.innerHTML = `
-    <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${isSuccess ? 'bg-amber-500/20 text-amber-400' : 'bg-red-500/20 text-red-300'}">
-      <i class="fa-solid ${isSuccess ? 'fa-check' : 'fa-circle-exclamation'} text-sm"></i>
+    <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${isSuccess ? "bg-amber-500/20 text-amber-400" : "bg-red-500/20 text-red-300"}">
+      <i class="fa-solid ${isSuccess ? "fa-check" : "fa-circle-exclamation"} text-sm"></i>
     </div>
     <div class="flex-1 text-sm leading-relaxed">${message}</div>
     <button class="text-slate-400 hover:text-white transition-colors" onclick="this.parentElement.remove()">
@@ -364,12 +223,12 @@ function showToast(message, type = 'success') {
 
   // Animate in
   setTimeout(() => {
-    toast.classList.remove('translate-y-[-20px]', 'opacity-0');
+    toast.classList.remove("translate-y-[-20px]", "opacity-0");
   }, 10);
 
   // Auto remove after 5 seconds
   setTimeout(() => {
-    toast.classList.add('opacity-0', 'translate-y-[-10px]');
+    toast.classList.add("opacity-0", "translate-y-[-10px]");
     setTimeout(() => toast.remove(), 500);
   }, 5000);
 }
@@ -379,44 +238,46 @@ function showToast(message, type = 'success') {
    ========================================================================== */
 
 async function initSeo() {
-  const isProductsPage = window.location.pathname.toLowerCase().includes('products') || 
-                         document.body.dataset.page === 'products';
-  const pageKey = isProductsPage ? 'products' : 'home';
+  const isProductsPage =
+    window.location.pathname.toLowerCase().includes("products") ||
+    document.body.dataset.page === "products";
+  const pageKey = isProductsPage ? "products" : "home";
 
-  let seoData = FALLBACK_SEO;
   try {
-    const res = await fetch('seo.json');
-    if (res.ok) {
-      seoData = await res.json();
-    }
+    const res = await fetch("seo.json");
+    if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+    const seoData = await res.json();
+    const config = seoData[pageKey];
+    if (!config) return;
+
+    // Set document title
+    document.title = config.title;
+
+    // Helper to update or create meta tags
+    const setMeta = (attr, val, content) => {
+      if (!content) return;
+      let meta = document.querySelector(`meta[${attr}="${val}"]`);
+      if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute(attr, val);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute("content", content);
+    };
+
+    setMeta("name", "description", config.description);
+    setMeta("name", "keywords", config.keywords);
+    setMeta("property", "og:title", config.ogTitle || config.title);
+    setMeta(
+      "property",
+      "og:description",
+      config.ogDescription || config.description,
+    );
+    setMeta("property", "og:image", config.ogImage);
+    setMeta("property", "og:type", "website");
   } catch (err) {
-    console.info('Using fallback SEO config:', err.message);
+    console.warn("Lưu ý khi tải seo.json:", err.message);
   }
-
-  const config = seoData[pageKey] || FALLBACK_SEO[pageKey];
-  if (!config) return;
-
-  // Set document title
-  document.title = config.title;
-
-  // Helper to update or create meta tags
-  const setMeta = (attr, val, content) => {
-    if (!content) return;
-    let meta = document.querySelector(`meta[${attr}="${val}"]`);
-    if (!meta) {
-      meta = document.createElement('meta');
-      meta.setAttribute(attr, val);
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute('content', content);
-  };
-
-  setMeta('name', 'description', config.description);
-  setMeta('name', 'keywords', config.keywords);
-  setMeta('property', 'og:title', config.ogTitle || config.title);
-  setMeta('property', 'og:description', config.ogDescription || config.description);
-  setMeta('property', 'og:image', config.ogImage);
-  setMeta('property', 'og:type', 'website');
 }
 
 /* ==========================================================================
@@ -425,50 +286,59 @@ async function initSeo() {
 
 let allProducts = [];
 let filteredProducts = [];
-let currentCategory = 'all';
-let searchKeyword = '';
+let currentCategory = "all";
+let searchKeyword = "";
 let currentPage = 1;
 const itemsPerPage = 8;
 
 async function initProductsPage() {
-  const gridContainer = document.getElementById('products-grid');
-  const searchInput = document.getElementById('search-input');
-  const categoryFilters = document.querySelectorAll('.category-filter-btn');
-  const paginationContainer = document.getElementById('pagination-container');
+  const gridContainer = document.getElementById("products-grid");
+  const searchInput = document.getElementById("search-input");
+  const categoryFilters = document.querySelectorAll(".category-filter-btn");
+  const paginationContainer = document.getElementById("pagination-container");
 
   // Check URL query params for initial category (e.g. products.html?category=bon-cau)
   const urlParams = new URLSearchParams(window.location.search);
-  const paramCat = urlParams.get('category');
+  const paramCat = urlParams.get("category");
   if (paramCat) {
     currentCategory = decodeURIComponent(paramCat);
   }
 
-  // Fetch product data
+  // Fetch product data directly from data.json
   try {
-    const response = await fetch('data.json');
-    if (response.ok) {
-      allProducts = await response.json();
-    } else {
-      allProducts = FALLBACK_DATA;
-    }
+    const response = await fetch("data.json");
+    if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+    allProducts = await response.json();
   } catch (err) {
-    console.info('Loaded fallback product data:', err.message);
-    allProducts = FALLBACK_DATA;
+    console.error("Lỗi khi tải data.json:", err.message);
+    if (gridContainer) {
+      gridContainer.innerHTML = `
+        <div class="col-span-full py-16 text-center text-slate-500">
+          <i class="fa-solid fa-triangle-exclamation text-3xl text-amber-500 mb-3"></i>
+          <p class="font-bold text-slate-800 text-lg">Không thể tải danh sách sản phẩm từ data.json</p>
+          <p class="text-sm text-slate-500 mt-2 max-w-md mx-auto">
+            Trình duyệt hạn chế gọi fetch trực tiếp khi mở qua giao thức <code>file:///</code>. 
+            Vui lòng chạy dự án bằng Live Server hoặc HTTP server cục bộ để xem đầy đủ dữ liệu.
+          </p>
+        </div>
+      `;
+    }
+    return;
   }
 
   // Setup Search Input Event
   if (searchInput) {
-    searchInput.addEventListener('input', (e) => {
+    searchInput.addEventListener("input", (e) => {
       searchKeyword = e.target.value.trim().toLowerCase();
       currentPage = 1;
       applyFilters();
     });
 
-    const clearBtn = document.getElementById('search-clear-btn');
+    const clearBtn = document.getElementById("search-clear-btn");
     if (clearBtn) {
-      clearBtn.addEventListener('click', () => {
-        searchInput.value = '';
-        searchKeyword = '';
+      clearBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        searchKeyword = "";
         currentPage = 1;
         applyFilters();
       });
@@ -476,14 +346,24 @@ async function initProductsPage() {
   }
 
   // Setup Category Filter Buttons Event
-  categoryFilters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      categoryFilters.forEach(b => {
-        b.classList.remove('bg-amber-600', 'text-white', 'shadow-md');
-        b.classList.add('bg-white', 'text-slate-700', 'hover:bg-amber-50', 'border-slate-200');
+  categoryFilters.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      categoryFilters.forEach((b) => {
+        b.classList.remove("bg-amber-600", "text-white", "shadow-md");
+        b.classList.add(
+          "bg-white",
+          "text-slate-700",
+          "hover:bg-amber-50",
+          "border-slate-200",
+        );
       });
-      btn.classList.add('bg-amber-600', 'text-white', 'shadow-md');
-      btn.classList.remove('bg-white', 'text-slate-700', 'hover:bg-amber-50', 'border-slate-200');
+      btn.classList.add("bg-amber-600", "text-white", "shadow-md");
+      btn.classList.remove(
+        "bg-white",
+        "text-slate-700",
+        "hover:bg-amber-50",
+        "border-slate-200",
+      );
 
       currentCategory = btn.dataset.category;
       currentPage = 1;
@@ -493,7 +373,7 @@ async function initProductsPage() {
 
   // Activate the initial category button if set via URL
   if (paramCat) {
-    categoryFilters.forEach(btn => {
+    categoryFilters.forEach((btn) => {
       if (btn.dataset.category === currentCategory) {
         btn.click();
       }
@@ -507,12 +387,14 @@ async function initProductsPage() {
  * Filter products based on search keyword and category
  */
 function applyFilters() {
-  filteredProducts = allProducts.filter(product => {
-    const matchesCategory = (currentCategory === 'all') || (product.category === currentCategory);
-    const matchesSearch = !searchKeyword || 
-                          product.name.toLowerCase().includes(searchKeyword) ||
-                          product.category.toLowerCase().includes(searchKeyword) ||
-                          product.description.toLowerCase().includes(searchKeyword);
+  filteredProducts = allProducts.filter((product) => {
+    const matchesCategory =
+      currentCategory === "all" || product.category === currentCategory;
+    const matchesSearch =
+      !searchKeyword ||
+      product.name.toLowerCase().includes(searchKeyword) ||
+      product.category.toLowerCase().includes(searchKeyword) ||
+      product.description.toLowerCase().includes(searchKeyword);
     return matchesCategory && matchesSearch;
   });
 
@@ -525,7 +407,7 @@ function applyFilters() {
  * Display count of matched products
  */
 function renderProductCount() {
-  const countEl = document.getElementById('products-count');
+  const countEl = document.getElementById("products-count");
   if (countEl) {
     countEl.textContent = `Hiển thị ${filteredProducts.length} sản phẩm`;
   }
@@ -535,7 +417,7 @@ function renderProductCount() {
  * Render paginated products into DOM
  */
 function renderProducts() {
-  const grid = document.getElementById('products-grid');
+  const grid = document.getElementById("products-grid");
   if (!grid) return;
 
   if (filteredProducts.length === 0) {
@@ -558,13 +440,14 @@ function renderProducts() {
   const endIndex = startIndex + itemsPerPage;
   const pageItems = filteredProducts.slice(startIndex, endIndex);
 
-  grid.innerHTML = pageItems.map(product => {
-    const formattedPrice = new Intl.NumberFormat('vi-VN', {
-      style: 'currency',
-      currency: 'VND'
-    }).format(product.price);
+  grid.innerHTML = pageItems
+    .map((product) => {
+      const formattedPrice = new Intl.NumberFormat("vi-VN", {
+        style: "currency",
+        currency: "VND",
+      }).format(product.price);
 
-    return `
+      return `
       <div class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col">
         <!-- Image Box -->
         <div class="relative overflow-hidden aspect-[4/3] bg-slate-100">
@@ -624,20 +507,21 @@ function renderProducts() {
         </div>
       </div>
     `;
-  }).join('');
+    })
+    .join("");
 }
 
 /**
  * Render Pagination controls
  */
 function renderPagination() {
-  const container = document.getElementById('pagination-container');
+  const container = document.getElementById("pagination-container");
   if (!container) return;
 
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
 
   if (totalPages <= 1) {
-    container.innerHTML = '';
+    container.innerHTML = "";
     return;
   }
 
@@ -646,9 +530,11 @@ function renderPagination() {
       <!-- Prev Button -->
       <button 
         onclick="changePage(${currentPage - 1})"
-        ${currentPage === 1 ? 'disabled' : ''}
+        ${currentPage === 1 ? "disabled" : ""}
         class="w-10 h-10 rounded-xl flex items-center justify-center border border-slate-200 bg-white text-slate-700 transition-colors ${
-          currentPage === 1 ? 'opacity-40 cursor-not-allowed' : 'hover:bg-amber-50 hover:border-amber-400 hover:text-amber-600'
+          currentPage === 1
+            ? "opacity-40 cursor-not-allowed"
+            : "hover:bg-amber-50 hover:border-amber-400 hover:text-amber-600"
         }"
         title="Trang trước"
       >
@@ -662,9 +548,9 @@ function renderPagination() {
       <button 
         onclick="changePage(${i})"
         class="w-10 h-10 rounded-xl font-bold text-sm transition-all ${
-          isActive 
-            ? 'bg-amber-600 text-white shadow-md shadow-amber-600/30 border border-amber-600' 
-            : 'bg-white border border-slate-200 text-slate-700 hover:bg-amber-50 hover:border-amber-400 hover:text-amber-600'
+          isActive
+            ? "bg-amber-600 text-white shadow-md shadow-amber-600/30 border border-amber-600"
+            : "bg-white border border-slate-200 text-slate-700 hover:bg-amber-50 hover:border-amber-400 hover:text-amber-600"
         }"
       >
         ${i}
@@ -676,9 +562,11 @@ function renderPagination() {
       <!-- Next Button -->
       <button 
         onclick="changePage(${currentPage + 1})"
-        ${currentPage === totalPages ? 'disabled' : ''}
+        ${currentPage === totalPages ? "disabled" : ""}
         class="w-10 h-10 rounded-xl flex items-center justify-center border border-slate-200 bg-white text-slate-700 transition-colors ${
-          currentPage === totalPages ? 'opacity-40 cursor-not-allowed' : 'hover:bg-amber-50 hover:border-amber-400 hover:text-amber-600'
+          currentPage === totalPages
+            ? "opacity-40 cursor-not-allowed"
+            : "hover:bg-amber-50 hover:border-amber-400 hover:text-amber-600"
         }"
         title="Trang kế tiếp"
       >
@@ -693,7 +581,7 @@ function renderPagination() {
 /**
  * Change current pagination page
  */
-window.changePage = function(page) {
+window.changePage = function (page) {
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
   if (page < 1 || page > totalPages) return;
   currentPage = page;
@@ -701,23 +589,23 @@ window.changePage = function(page) {
   renderPagination();
 
   // Smooth scroll back to top of products grid
-  const anchor = document.getElementById('products-section-anchor');
+  const anchor = document.getElementById("products-section-anchor");
   if (anchor) {
-    anchor.scrollIntoView({ behavior: 'smooth' });
+    anchor.scrollIntoView({ behavior: "smooth" });
   }
 };
 
 /**
  * Reset all search and category filters
  */
-window.resetFilters = function() {
-  const searchInput = document.getElementById('search-input');
-  if (searchInput) searchInput.value = '';
-  searchKeyword = '';
+window.resetFilters = function () {
+  const searchInput = document.getElementById("search-input");
+  if (searchInput) searchInput.value = "";
+  searchKeyword = "";
 
-  const categoryFilters = document.querySelectorAll('.category-filter-btn');
-  categoryFilters.forEach(btn => {
-    if (btn.dataset.category === 'all') {
+  const categoryFilters = document.querySelectorAll(".category-filter-btn");
+  categoryFilters.forEach((btn) => {
+    if (btn.dataset.category === "all") {
       btn.click();
     }
   });
@@ -726,20 +614,21 @@ window.resetFilters = function() {
 /**
  * Quick View Product Modal Logic
  */
-window.openProductModal = function(productId) {
-  const product = allProducts.find(p => p.id === productId);
+window.openProductModal = function (productId) {
+  const product = allProducts.find((p) => p.id === productId);
   if (!product) return;
 
-  const formattedPrice = new Intl.NumberFormat('vi-VN', {
-    style: 'currency',
-    currency: 'VND'
+  const formattedPrice = new Intl.NumberFormat("vi-VN", {
+    style: "currency",
+    currency: "VND",
   }).format(product.price);
 
-  let modal = document.getElementById('product-modal');
+  let modal = document.getElementById("product-modal");
   if (!modal) {
-    modal = document.createElement('div');
-    modal.id = 'product-modal';
-    modal.className = 'fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300';
+    modal = document.createElement("div");
+    modal.id = "product-modal";
+    modal.className =
+      "fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300";
     document.body.appendChild(modal);
   }
 
@@ -834,11 +723,11 @@ window.openProductModal = function(productId) {
   `;
 
   // Show modal
-  modal.classList.remove('opacity-0', 'pointer-events-none');
-  const card = modal.querySelector('#modal-card');
+  modal.classList.remove("opacity-0", "pointer-events-none");
+  const card = modal.querySelector("#modal-card");
   if (card) {
-    card.classList.remove('scale-95');
-    card.classList.add('scale-100');
+    card.classList.remove("scale-95");
+    card.classList.add("scale-100");
   }
 
   // Close when clicking outside
@@ -849,13 +738,13 @@ window.openProductModal = function(productId) {
   };
 };
 
-window.closeProductModal = function() {
-  const modal = document.getElementById('product-modal');
+window.closeProductModal = function () {
+  const modal = document.getElementById("product-modal");
   if (!modal) return;
-  modal.classList.add('opacity-0', 'pointer-events-none');
-  const card = modal.querySelector('#modal-card');
+  modal.classList.add("opacity-0", "pointer-events-none");
+  const card = modal.querySelector("#modal-card");
   if (card) {
-    card.classList.add('scale-95');
-    card.classList.remove('scale-100');
+    card.classList.add("scale-95");
+    card.classList.remove("scale-100");
   }
 };
